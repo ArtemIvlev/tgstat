@@ -29,9 +29,6 @@ class ChannelParticipant(Base):
     raw = Column(JSON)
     date = Column(DateTime, default=datetime.utcnow)
 
-    # Связь с активностью
-    activity = relationship("UserActivity", back_populates="participant", uselist=False)
-
 class ChannelPost(Base):
     __tablename__ = 'channel_posts'
 
@@ -61,17 +58,27 @@ class PostReaction(Base):
     # Связи
     post = relationship("ChannelPost", back_populates="reactions")
 
-class UserActivity(Base):
-    __tablename__ = 'user_activity'
+class ChannelActivity(Base):
+    __tablename__ = 'channel_activity'
 
     id = Column(Integer, primary_key=True)
     channel_id = Column(Integer, nullable=False)
-    user_id = Column(Integer, ForeignKey('channel_participants.user_id'), nullable=False)
-    is_active = Column(Boolean, default=False)
-    last_seen = Column(DateTime)
-    last_post_date = Column(DateTime)
-    raw = Column(JSON)
     date = Column(DateTime, default=datetime.utcnow)
+    total_views = Column(Integer, default=0)
+    total_forwards = Column(Integer, default=0)
+    total_reactions = Column(Integer, default=0)
+    posts_count = Column(Integer, default=0)
+    active_hours = Column(JSON)  # Статистика активности по часам
+    raw = Column(JSON)
 
-    # Связь с участником
-    participant = relationship("ChannelParticipant", back_populates="activity")
+class DiscussionStats(Base):
+    __tablename__ = 'discussion_stats'
+
+    id = Column(Integer, primary_key=True)
+    channel_id = Column(Integer, nullable=False)
+    date = Column(DateTime, default=datetime.utcnow)
+    total_comments = Column(Integer, default=0)
+    active_users = Column(Integer, default=0)  # Количество активных пользователей в обсуждениях
+    comments_per_post = Column(JSON)  # Количество комментариев к каждому посту
+    top_commenters = Column(JSON)  # Топ комментаторов
+    raw = Column(JSON)

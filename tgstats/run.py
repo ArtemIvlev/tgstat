@@ -7,7 +7,8 @@ from tgstats.database import Database
 from tgstats.collectors.channel_stats import ChannelStatsCollector
 from tgstats.collectors.channel_posts import ChannelPostsCollector
 from tgstats.collectors.channel_participants import ChannelParticipantsCollector
-from tgstats.collectors.user_activity import UserActivityCollector
+from tgstats.collectors.channel_activity import ChannelActivityCollector
+from tgstats.collectors.discussion_stats import DiscussionStatsCollector
 
 # Загружаем переменные окружения
 load_dotenv()
@@ -26,31 +27,31 @@ async def main():
     # Инициализируем базу данных
     db = Database()
     
-    # Определяем идентификатор канала
-    channel_identifier = CHANNEL_ID or CHANNEL_USERNAME
-    
-    if channel_identifier.replace('-', '').isdigit():
-        channel_id = channel_identifier.replace('-100', '')
-        channel = PeerChannel(int(channel_id))
-    else:
-        channel = channel_identifier
-    
-    # Создаем коллекторы
-    collectors = [
-        ChannelStatsCollector(client, db),
-        ChannelPostsCollector(client, db),
-        ChannelParticipantsCollector(client, db),
-        UserActivityCollector(client, db)
-    ]
-    
-    # Запускаем все коллекторы
-    for collector in collectors:
-        try:
-            await collector.run(channel)
-        except Exception as e:
-            print(f"Ошибка в коллекторе {collector.__class__.__name__}: {str(e)}")
-    
-    await client.disconnect()
+    try:
+        # Определяем канал
+        if CHANNEL_ID:
+            channel = PeerChannel(int(CHANNEL_ID.replace('-100', '')))
+        else:
+            channel = CHANNEL_USERNAME
+        
+        # Собираем статистику
+        collectors = [
+            ChannelStatsCollector(client, db),
+            ChannelPostsCollector(client, db),
+            ChannelParticipantsCollector(client, db),
+            ChannelActivityCollector(client, db),
+            DiscussionStatsCollector(client, db)
+        ]
+        
+        # Запускаем все коллекторы
+        for collector in collectors:
+            try:
+                await collector.run(channel)
+            except Exception as e:
+                print(f"Ошибка в коллекторе {collector.__class__.__name__}: {str(e)}")
+            
+    finally:
+        await client.disconnect()
 
 if __name__ == '__main__':
     asyncio.run(main())

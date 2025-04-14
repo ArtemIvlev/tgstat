@@ -13,7 +13,7 @@ class ChannelParticipantsCollector(BaseCollector):
         
         # Получаем всех участников канала
         offset = 0
-        limit = 200
+        limit = 20000
         all_participants = []
         
         while True:

@@ -10,7 +10,7 @@ API_HASH = os.getenv("TG_API_HASH")
 SESSION_PATH = os.getenv("TG_SESSION", "tgstats.session")
 
 # Database configuration
-DB_URL = os.getenv("TG_DB_URL", "sqlite:///tgstats.sqlite3")
+DB_URL = os.getenv("TG_DB_URL", "sqlite:///tgstats.db")
 
 # Channel configuration
 CHANNEL_USERNAME = os.getenv("TG_CHANNEL_USERNAME", "homoludens_asia_trip")

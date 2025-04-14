@@ -11,9 +11,9 @@ class ChannelPostsCollector(BaseCollector):
         # Получаем все сообщения из канала
         messages = []
         offset_id = 0
-        limit = 100
+        limit = 10000
         total_messages = 0
-        total_limit = 1000  # Ограничиваем количество сообщений
+        total_limit = 100000  # Ограничиваем количество сообщений
         
         while True:
             history = await self.client(GetHistoryRequest(
