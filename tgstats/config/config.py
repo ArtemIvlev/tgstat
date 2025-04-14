@@ -16,3 +16,8 @@ DB_URL = os.getenv("TG_DB_URL", "sqlite:///tgstats.db")
 CHANNEL_USERNAME = os.getenv("TG_CHANNEL_USERNAME", "homoludens_asia_trip")
 CHANNEL_ID = os.getenv("TG_CHANNEL_ID")  # ID для закрытых каналов
 CHANNEL_TITLE = os.getenv("TG_CHANNEL_TITLE", "Моё большое путешествие")
+
+# Logging configuration
+LOG_LEVEL = os.getenv("TG_LOG_LEVEL", "INFO")
+LOG_FORMAT = os.getenv("TG_LOG_FORMAT", "%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+LOG_FILE = os.getenv("TG_LOG_FILE", "tgstats.log") 

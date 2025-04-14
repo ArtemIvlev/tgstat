@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from tgstats.config import DB_URL
+from tgstats.config.config import DB_URL
 from tgstats.database.models import Base
 
 engine = create_engine(DB_URL)
