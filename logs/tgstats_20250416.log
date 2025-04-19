@@ -1,0 +1,1236 @@
+2025-04-16 08:31:28 - tgstats.run - INFO - Запуск сбора статистики канала
+2025-04-16 08:31:28 - tgstats.run - INFO - Инициализация клиента Telegram
+2025-04-16 08:31:28 - tgstats.client - INFO - Копируем файл сессии из tgstats.session в tg-post.session
+2025-04-16 08:31:28 - tgstats.client - INFO - Файл сессии успешно скопирован
+2025-04-16 08:31:28 - tgstats.client - INFO - Создание клиента Telegram с сессией: tg-post.session
+2025-04-16 08:31:29 - tgstats.run - INFO - Инициализация базы данных
+2025-04-16 08:31:29 - tgstats.run - INFO - Используется ID канала: 2643969088
+2025-04-16 08:31:29 - tgstats.run - INFO - Запуск коллектора: ChannelStatsCollector
+2025-04-16 08:31:29 - tgstats.collectors.channel_stats - INFO - Начало сбора статистики канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:31:29 - tgstats.collectors.channel_stats - INFO - Получение информации о канале
+2025-04-16 08:31:29 - tgstats.collectors.channel_stats - INFO - Получена информация о канале: Те самые фото что банит инстаграм (Reborn) (ID: 2643969088)
+2025-04-16 08:31:29 - tgstats.collectors.channel_stats - INFO - Получение полной информации о канале
+2025-04-16 08:31:29 - tgstats.collectors.channel_stats - INFO - Получена полная информация о канале. Подписчиков: 4
+2025-04-16 08:31:29 - tgstats.collectors.channel_stats - INFO - Преобразование данных для сохранения
+2025-04-16 08:31:29 - tgstats.collectors.channel_stats - INFO - Проверка существующих записей за 2025-04-16
+2025-04-16 08:31:29 - tgstats.collectors.channel_stats - INFO - Создание новой записи статистики
+2025-04-16 08:31:29 - tgstats.collectors.channel_stats - INFO - Сохранение изменений в базе данных
+2025-04-16 08:31:29 - tgstats.collectors.channel_stats - INFO - Статистика канала успешно сохранена
+2025-04-16 08:31:29 - tgstats.run - INFO - Коллектор ChannelStatsCollector успешно завершил работу
+2025-04-16 08:31:29 - tgstats.run - INFO - Запуск коллектора: ChannelPostsCollector
+2025-04-16 08:31:30 - tgstats.run - INFO - Коллектор ChannelPostsCollector успешно завершил работу
+2025-04-16 08:31:30 - tgstats.run - INFO - Запуск коллектора: ChannelParticipantsCollector
+2025-04-16 08:31:30 - tgstats.run - INFO - Коллектор ChannelParticipantsCollector успешно завершил работу
+2025-04-16 08:31:30 - tgstats.run - INFO - Запуск коллектора: ChannelActivityCollector
+2025-04-16 08:31:30 - tgstats.run - ERROR - Ошибка в коллекторе ChannelActivityCollector: unsupported operand type(s) for +: 'int' and 'NoneType'
+Traceback (most recent call last):
+  File "/home/artem/tgstat/tgstats/run.py", line 58, in main
+    await collector.run(channel)
+  File "/home/artem/tgstat/tgstats/collectors/channel_activity.py", line 22, in run
+    total_views = sum(post.views for post in posts)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+2025-04-16 08:31:30 - tgstats.run - INFO - Запуск коллектора: DiscussionStatsCollector
+2025-04-16 08:31:30 - tgstats.run - INFO - Коллектор DiscussionStatsCollector успешно завершил работу
+2025-04-16 08:31:30 - tgstats.run - INFO - Отключение клиента Telegram
+2025-04-16 08:31:30 - tgstats.run - INFO - Сбор статистики завершен
+2025-04-16 08:34:16 - tgstats.run - INFO - Запуск сбора статистики канала
+2025-04-16 08:34:16 - tgstats.run - INFO - Инициализация клиента Telegram
+2025-04-16 08:34:16 - tgstats.client - INFO - Найден локальный файл сессии: tg-post.session
+2025-04-16 08:34:16 - tgstats.client - INFO - Создание клиента Telegram с сессией: tg-post.session
+2025-04-16 08:34:16 - tgstats.run - INFO - Инициализация базы данных
+2025-04-16 08:34:17 - tgstats.run - INFO - Используется ID канала: 2643969088
+2025-04-16 08:34:17 - tgstats.run - INFO - Запуск коллектора: ChannelStatsCollector
+2025-04-16 08:34:17 - tgstats.collectors.channel_stats - INFO - Начало сбора статистики канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:34:17 - tgstats.collectors.channel_stats - INFO - Получение информации о канале
+2025-04-16 08:34:17 - tgstats.collectors.channel_stats - INFO - Получена информация о канале: Те самые фото что банит инстаграм (Reborn) (ID: 2643969088)
+2025-04-16 08:34:17 - tgstats.collectors.channel_stats - INFO - Получение полной информации о канале
+2025-04-16 08:34:17 - tgstats.collectors.channel_stats - INFO - Получена полная информация о канале. Подписчиков: 4
+2025-04-16 08:34:17 - tgstats.collectors.channel_stats - INFO - Преобразование данных для сохранения
+2025-04-16 08:34:17 - tgstats.collectors.channel_stats - INFO - Проверка существующих записей за 2025-04-16
+2025-04-16 08:34:17 - tgstats.collectors.channel_stats - INFO - Создание новой записи статистики
+2025-04-16 08:34:17 - tgstats.collectors.channel_stats - INFO - Сохранение изменений в базе данных
+2025-04-16 08:34:17 - tgstats.run - ERROR - Ошибка в коллекторе ChannelStatsCollector: (psycopg2.errors.NumericValueOutOfRange) integer out of range
+
+[SQL: INSERT INTO channel_stats (channel_id, title, username, subscribers, raw, date) VALUES (%(channel_id)s, %(title)s, %(username)s, %(subscribers)s, %(raw)s::JSON, %(date)s) RETURNING channel_stats.id]
+[parameters: {'channel_id': 2643969088, 'title': 'Те самые фото что банят инстаграм (Reborn)', 'username': None, 'subscribers': 4, 'raw': '{"_": "ChannelFull", "id": 2643969088, "about": "", "read_inbox_max_id": 10, "read_outbox_max_id": 0, "unread_count": 0, "chat_photo": {"_": "Photo", ... (7436 characters truncated) ... es": null, "wallpaper": null, "boosts_applied": null, "boosts_unrestrict": null, "emojiset": null, "bot_verification": null, "stargifts_count": null}', 'date': datetime.datetime(2025, 4, 16, 5, 34, 17, 352853)}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+Traceback (most recent call last):
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.NumericValueOutOfRange: integer out of range
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/artem/tgstat/tgstats/run.py", line 58, in main
+    await collector.run(channel)
+  File "/home/artem/tgstat/tgstats/collectors/channel_stats.py", line 70, in run
+    self.db.commit()
+  File "/home/artem/tgstat/tgstats/database/database.py", line 26, in commit
+    self.session.commit()
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4353, in flush
+    self._flush(objects)
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4488, in _flush
+    with util.safe_reraise():
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4449, in _flush
+    flush_context.execute()
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.DataError: (psycopg2.errors.NumericValueOutOfRange) integer out of range
+
+[SQL: INSERT INTO channel_stats (channel_id, title, username, subscribers, raw, date) VALUES (%(channel_id)s, %(title)s, %(username)s, %(subscribers)s, %(raw)s::JSON, %(date)s) RETURNING channel_stats.id]
+[parameters: {'channel_id': 2643969088, 'title': 'Те самые фото что банят инстаграм (Reborn)', 'username': None, 'subscribers': 4, 'raw': '{"_": "ChannelFull", "id": 2643969088, "about": "", "read_inbox_max_id": 10, "read_outbox_max_id": 0, "unread_count": 0, "chat_photo": {"_": "Photo", ... (7436 characters truncated) ... es": null, "wallpaper": null, "boosts_applied": null, "boosts_unrestrict": null, "emojiset": null, "bot_verification": null, "stargifts_count": null}', 'date': datetime.datetime(2025, 4, 16, 5, 34, 17, 352853)}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2025-04-16 08:34:17 - tgstats.run - INFO - Запуск коллектора: ChannelPostsCollector
+2025-04-16 08:34:17 - tgstats.run - ERROR - Ошибка в коллекторе ChannelPostsCollector: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.errors.NumericValueOutOfRange) integer out of range
+
+[SQL: INSERT INTO channel_stats (channel_id, title, username, subscribers, raw, date) VALUES (%(channel_id)s, %(title)s, %(username)s, %(subscribers)s, %(raw)s::JSON, %(date)s) RETURNING channel_stats.id]
+[parameters: {'channel_id': 2643969088, 'title': 'Те самые фото что банят инстаграм (Reborn)', 'username': None, 'subscribers': 4, 'raw': '{"_": "ChannelFull", "id": 2643969088, "about": "", "read_inbox_max_id": 10, "read_outbox_max_id": 0, "unread_count": 0, "chat_photo": {"_": "Photo", ... (7436 characters truncated) ... es": null, "wallpaper": null, "boosts_applied": null, "boosts_unrestrict": null, "emojiset": null, "bot_verification": null, "stargifts_count": null}', 'date': datetime.datetime(2025, 4, 16, 5, 34, 17, 352853)}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+Traceback (most recent call last):
+  File "/home/artem/tgstat/tgstats/run.py", line 58, in main
+    await collector.run(channel)
+  File "/home/artem/tgstat/tgstats/collectors/channel_posts.py", line 49, in run
+    ).first()
+      ^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2858, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2241, in _execute_internal
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2110, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in _connection_for_bind
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 103, in _go
+    self._raise_for_prerequisite_state(fn.__name__, current_state)
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 973, in _raise_for_prerequisite_state
+    raise sa_exc.PendingRollbackError(
+sqlalchemy.exc.PendingRollbackError: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.errors.NumericValueOutOfRange) integer out of range
+
+[SQL: INSERT INTO channel_stats (channel_id, title, username, subscribers, raw, date) VALUES (%(channel_id)s, %(title)s, %(username)s, %(subscribers)s, %(raw)s::JSON, %(date)s) RETURNING channel_stats.id]
+[parameters: {'channel_id': 2643969088, 'title': 'Те самые фото что банят инстаграм (Reborn)', 'username': None, 'subscribers': 4, 'raw': '{"_": "ChannelFull", "id": 2643969088, "about": "", "read_inbox_max_id": 10, "read_outbox_max_id": 0, "unread_count": 0, "chat_photo": {"_": "Photo", ... (7436 characters truncated) ... es": null, "wallpaper": null, "boosts_applied": null, "boosts_unrestrict": null, "emojiset": null, "bot_verification": null, "stargifts_count": null}', 'date': datetime.datetime(2025, 4, 16, 5, 34, 17, 352853)}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-04-16 08:34:17 - tgstats.run - INFO - Запуск коллектора: ChannelParticipantsCollector
+2025-04-16 08:34:17 - tgstats.run - ERROR - Ошибка в коллекторе ChannelParticipantsCollector: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.errors.NumericValueOutOfRange) integer out of range
+
+[SQL: INSERT INTO channel_stats (channel_id, title, username, subscribers, raw, date) VALUES (%(channel_id)s, %(title)s, %(username)s, %(subscribers)s, %(raw)s::JSON, %(date)s) RETURNING channel_stats.id]
+[parameters: {'channel_id': 2643969088, 'title': 'Те самые фото что банят инстаграм (Reborn)', 'username': None, 'subscribers': 4, 'raw': '{"_": "ChannelFull", "id": 2643969088, "about": "", "read_inbox_max_id": 10, "read_outbox_max_id": 0, "unread_count": 0, "chat_photo": {"_": "Photo", ... (7436 characters truncated) ... es": null, "wallpaper": null, "boosts_applied": null, "boosts_unrestrict": null, "emojiset": null, "bot_verification": null, "stargifts_count": null}', 'date': datetime.datetime(2025, 4, 16, 5, 34, 17, 352853)}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+Traceback (most recent call last):
+  File "/home/artem/tgstat/tgstats/run.py", line 58, in main
+    await collector.run(channel)
+  File "/home/artem/tgstat/tgstats/collectors/channel_participants.py", line 45, in run
+    ).first()
+      ^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2858, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2241, in _execute_internal
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2110, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in _connection_for_bind
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 103, in _go
+    self._raise_for_prerequisite_state(fn.__name__, current_state)
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 973, in _raise_for_prerequisite_state
+    raise sa_exc.PendingRollbackError(
+sqlalchemy.exc.PendingRollbackError: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.errors.NumericValueOutOfRange) integer out of range
+
+[SQL: INSERT INTO channel_stats (channel_id, title, username, subscribers, raw, date) VALUES (%(channel_id)s, %(title)s, %(username)s, %(subscribers)s, %(raw)s::JSON, %(date)s) RETURNING channel_stats.id]
+[parameters: {'channel_id': 2643969088, 'title': 'Те самые фото что банят инстаграм (Reborn)', 'username': None, 'subscribers': 4, 'raw': '{"_": "ChannelFull", "id": 2643969088, "about": "", "read_inbox_max_id": 10, "read_outbox_max_id": 0, "unread_count": 0, "chat_photo": {"_": "Photo", ... (7436 characters truncated) ... es": null, "wallpaper": null, "boosts_applied": null, "boosts_unrestrict": null, "emojiset": null, "bot_verification": null, "stargifts_count": null}', 'date': datetime.datetime(2025, 4, 16, 5, 34, 17, 352853)}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-04-16 08:34:17 - tgstats.run - INFO - Запуск коллектора: ChannelActivityCollector
+2025-04-16 08:34:17 - tgstats.collectors.channel_activity - INFO - Начало сбора активности канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:34:18 - tgstats.run - ERROR - Ошибка в коллекторе ChannelActivityCollector: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.errors.NumericValueOutOfRange) integer out of range
+
+[SQL: INSERT INTO channel_stats (channel_id, title, username, subscribers, raw, date) VALUES (%(channel_id)s, %(title)s, %(username)s, %(subscribers)s, %(raw)s::JSON, %(date)s) RETURNING channel_stats.id]
+[parameters: {'channel_id': 2643969088, 'title': 'Те самые фото что банят инстаграм (Reborn)', 'username': None, 'subscribers': 4, 'raw': '{"_": "ChannelFull", "id": 2643969088, "about": "", "read_inbox_max_id": 10, "read_outbox_max_id": 0, "unread_count": 0, "chat_photo": {"_": "Photo", ... (7436 characters truncated) ... es": null, "wallpaper": null, "boosts_applied": null, "boosts_unrestrict": null, "emojiset": null, "bot_verification": null, "stargifts_count": null}', 'date': datetime.datetime(2025, 4, 16, 5, 34, 17, 352853)}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+Traceback (most recent call last):
+  File "/home/artem/tgstat/tgstats/run.py", line 58, in main
+    await collector.run(channel)
+  File "/home/artem/tgstat/tgstats/collectors/channel_activity.py", line 57, in run
+    ).first()
+      ^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2858, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2241, in _execute_internal
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2110, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in _connection_for_bind
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 103, in _go
+    self._raise_for_prerequisite_state(fn.__name__, current_state)
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 973, in _raise_for_prerequisite_state
+    raise sa_exc.PendingRollbackError(
+sqlalchemy.exc.PendingRollbackError: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.errors.NumericValueOutOfRange) integer out of range
+
+[SQL: INSERT INTO channel_stats (channel_id, title, username, subscribers, raw, date) VALUES (%(channel_id)s, %(title)s, %(username)s, %(subscribers)s, %(raw)s::JSON, %(date)s) RETURNING channel_stats.id]
+[parameters: {'channel_id': 2643969088, 'title': 'Те самые фото что банят инстаграм (Reborn)', 'username': None, 'subscribers': 4, 'raw': '{"_": "ChannelFull", "id": 2643969088, "about": "", "read_inbox_max_id": 10, "read_outbox_max_id": 0, "unread_count": 0, "chat_photo": {"_": "Photo", ... (7436 characters truncated) ... es": null, "wallpaper": null, "boosts_applied": null, "boosts_unrestrict": null, "emojiset": null, "bot_verification": null, "stargifts_count": null}', 'date': datetime.datetime(2025, 4, 16, 5, 34, 17, 352853)}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-04-16 08:34:18 - tgstats.run - INFO - Запуск коллектора: DiscussionStatsCollector
+2025-04-16 08:34:18 - tgstats.collectors.discussion_stats - INFO - Начало сбора статистики обсуждений канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:34:18 - tgstats.run - ERROR - Ошибка в коллекторе DiscussionStatsCollector: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.errors.NumericValueOutOfRange) integer out of range
+
+[SQL: INSERT INTO channel_stats (channel_id, title, username, subscribers, raw, date) VALUES (%(channel_id)s, %(title)s, %(username)s, %(subscribers)s, %(raw)s::JSON, %(date)s) RETURNING channel_stats.id]
+[parameters: {'channel_id': 2643969088, 'title': 'Те самые фото что банят инстаграм (Reborn)', 'username': None, 'subscribers': 4, 'raw': '{"_": "ChannelFull", "id": 2643969088, "about": "", "read_inbox_max_id": 10, "read_outbox_max_id": 0, "unread_count": 0, "chat_photo": {"_": "Photo", ... (7436 characters truncated) ... es": null, "wallpaper": null, "boosts_applied": null, "boosts_unrestrict": null, "emojiset": null, "bot_verification": null, "stargifts_count": null}', 'date': datetime.datetime(2025, 4, 16, 5, 34, 17, 352853)}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+Traceback (most recent call last):
+  File "/home/artem/tgstat/tgstats/run.py", line 58, in main
+    await collector.run(channel)
+  File "/home/artem/tgstat/tgstats/collectors/discussion_stats.py", line 25, in run
+    ).all()
+      ^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2858, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2241, in _execute_internal
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2110, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in _connection_for_bind
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 103, in _go
+    self._raise_for_prerequisite_state(fn.__name__, current_state)
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 973, in _raise_for_prerequisite_state
+    raise sa_exc.PendingRollbackError(
+sqlalchemy.exc.PendingRollbackError: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.errors.NumericValueOutOfRange) integer out of range
+
+[SQL: INSERT INTO channel_stats (channel_id, title, username, subscribers, raw, date) VALUES (%(channel_id)s, %(title)s, %(username)s, %(subscribers)s, %(raw)s::JSON, %(date)s) RETURNING channel_stats.id]
+[parameters: {'channel_id': 2643969088, 'title': 'Те самые фото что банят инстаграм (Reborn)', 'username': None, 'subscribers': 4, 'raw': '{"_": "ChannelFull", "id": 2643969088, "about": "", "read_inbox_max_id": 10, "read_outbox_max_id": 0, "unread_count": 0, "chat_photo": {"_": "Photo", ... (7436 characters truncated) ... es": null, "wallpaper": null, "boosts_applied": null, "boosts_unrestrict": null, "emojiset": null, "bot_verification": null, "stargifts_count": null}', 'date': datetime.datetime(2025, 4, 16, 5, 34, 17, 352853)}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-04-16 08:34:18 - tgstats.run - INFO - Отключение клиента Telegram
+2025-04-16 08:34:18 - tgstats.run - INFO - Сбор статистики завершен
+2025-04-16 08:35:00 - tgstats.run - INFO - Запуск сбора статистики канала
+2025-04-16 08:35:00 - tgstats.run - INFO - Инициализация клиента Telegram
+2025-04-16 08:35:00 - tgstats.client - INFO - Найден локальный файл сессии: tg-post.session
+2025-04-16 08:35:00 - tgstats.client - INFO - Создание клиента Telegram с сессией: tg-post.session
+2025-04-16 08:35:01 - tgstats.run - INFO - Инициализация базы данных
+2025-04-16 08:35:01 - tgstats.run - INFO - Используется ID канала: 2643969088
+2025-04-16 08:35:01 - tgstats.run - INFO - Запуск коллектора: ChannelStatsCollector
+2025-04-16 08:35:01 - tgstats.collectors.channel_stats - INFO - Начало сбора статистики канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:35:01 - tgstats.collectors.channel_stats - INFO - Получение информации о канале
+2025-04-16 08:35:01 - tgstats.collectors.channel_stats - INFO - Получена информация о канале: Те самые фото что банит инстаграм (Reborn) (ID: 2643969088)
+2025-04-16 08:35:01 - tgstats.collectors.channel_stats - INFO - Получение полной информации о канале
+2025-04-16 08:35:01 - tgstats.collectors.channel_stats - INFO - Получена полная информация о канале. Подписчиков: 4
+2025-04-16 08:35:01 - tgstats.collectors.channel_stats - INFO - Преобразование данных для сохранения
+2025-04-16 08:35:01 - tgstats.collectors.channel_stats - INFO - Проверка существующих записей за 2025-04-16
+2025-04-16 08:35:01 - tgstats.collectors.channel_stats - INFO - Создание новой записи статистики
+2025-04-16 08:35:01 - tgstats.collectors.channel_stats - INFO - Сохранение изменений в базе данных
+2025-04-16 08:35:01 - tgstats.collectors.channel_stats - INFO - Статистика канала успешно сохранена
+2025-04-16 08:35:01 - tgstats.run - INFO - Коллектор ChannelStatsCollector успешно завершил работу
+2025-04-16 08:35:01 - tgstats.run - INFO - Запуск коллектора: ChannelPostsCollector
+2025-04-16 08:35:02 - tgstats.run - INFO - Коллектор ChannelPostsCollector успешно завершил работу
+2025-04-16 08:35:02 - tgstats.run - INFO - Запуск коллектора: ChannelParticipantsCollector
+2025-04-16 08:35:02 - tgstats.run - INFO - Коллектор ChannelParticipantsCollector успешно завершил работу
+2025-04-16 08:35:02 - tgstats.run - INFO - Запуск коллектора: ChannelActivityCollector
+2025-04-16 08:35:02 - tgstats.collectors.channel_activity - INFO - Начало сбора активности канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:35:02 - tgstats.collectors.channel_activity - INFO - Активность канала сохранена: 1 постов, 2 просмотров
+2025-04-16 08:35:02 - tgstats.run - INFO - Коллектор ChannelActivityCollector успешно завершил работу
+2025-04-16 08:35:02 - tgstats.run - INFO - Запуск коллектора: DiscussionStatsCollector
+2025-04-16 08:35:02 - tgstats.collectors.discussion_stats - INFO - Начало сбора статистики обсуждений канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:35:02 - tgstats.collectors.discussion_stats - INFO - Статистика обсуждений сохранена: 0 комментариев, 0 активных пользователей
+2025-04-16 08:35:02 - tgstats.run - INFO - Коллектор DiscussionStatsCollector успешно завершил работу
+2025-04-16 08:35:02 - tgstats.run - INFO - Отключение клиента Telegram
+2025-04-16 08:35:02 - tgstats.run - INFO - Сбор статистики завершен
+2025-04-16 08:36:11 - tgstats.analyze - INFO - Начало анализа данных
+2025-04-16 08:36:11 - tgstats.analyze - INFO - Статистика канала:
+2025-04-16 08:36:11 - tgstats.analyze - INFO - Название: Те самые фото что банят инстаграм (Reborn)
+2025-04-16 08:36:11 - tgstats.analyze - INFO - ID: 2643969088
+2025-04-16 08:36:11 - tgstats.analyze - INFO - Подписчиков: 4
+2025-04-16 08:36:11 - tgstats.analyze - INFO - 
+Статистика постов:
+2025-04-16 08:36:11 - tgstats.analyze - INFO - Всего постов: 4
+2025-04-16 08:36:11 - tgstats.analyze - INFO - Общее количество просмотров: 7
+2025-04-16 08:36:11 - tgstats.analyze - INFO - Общее количество репостов: 2
+2025-04-16 08:36:11 - tgstats.analyze - INFO - 
+Статистика участников:
+2025-04-16 08:36:11 - tgstats.analyze - INFO - Всего участников в базе: 4
+2025-04-16 08:36:11 - tgstats.analyze - INFO - 
+Статистика активности за сегодня:
+2025-04-16 08:36:11 - tgstats.analyze - INFO - Количество постов: 1
+2025-04-16 08:36:11 - tgstats.analyze - INFO - Просмотров: 2
+2025-04-16 08:36:11 - tgstats.analyze - INFO - Репостов: 1
+2025-04-16 08:36:11 - tgstats.analyze - INFO - Реакций: 0
+2025-04-16 08:36:11 - tgstats.analyze - INFO - Активность по часам:
+2025-04-16 08:36:11 - tgstats.analyze - INFO -   5:00 - 2 просмотров
+2025-04-16 08:36:11 - tgstats.analyze - INFO - 
+Статистика обсуждений:
+2025-04-16 08:36:11 - tgstats.analyze - INFO - Всего комментариев: 0
+2025-04-16 08:36:11 - tgstats.analyze - INFO - Активных пользователей: 0
+2025-04-16 08:45:04 - tgstats.scheduler - INFO - Запуск планировщика задач
+2025-04-16 08:53:16 - tgstats.run - INFO - Запуск сбора статистики канала
+2025-04-16 08:53:16 - tgstats.run - INFO - Инициализация клиента Telegram
+2025-04-16 08:53:16 - tgstats.client - INFO - Найден локальный файл сессии: tg-post.session
+2025-04-16 08:53:16 - tgstats.client - INFO - Создание клиента Telegram с сессией: tg-post.session
+2025-04-16 08:53:17 - tgstats.run - INFO - Инициализация базы данных
+2025-04-16 08:53:17 - tgstats.run - INFO - Используется ID канала: 2643969088
+2025-04-16 08:53:17 - tgstats.run - INFO - Запуск коллектора: ChannelStatsCollector
+2025-04-16 08:53:17 - tgstats.collectors.channel_stats - INFO - Начало сбора статистики канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:53:17 - tgstats.collectors.channel_stats - INFO - Получение информации о канале
+2025-04-16 08:53:17 - tgstats.collectors.channel_stats - INFO - Получена информация о канале: Те самые фото что банит инстаграм (Reborn) (ID: 2643969088)
+2025-04-16 08:53:17 - tgstats.collectors.channel_stats - INFO - Получение полной информации о канале
+2025-04-16 08:53:17 - tgstats.collectors.channel_stats - INFO - Получена полная информация о канале. Подписчиков: 5
+2025-04-16 08:53:17 - tgstats.collectors.channel_stats - INFO - Преобразование данных для сохранения
+2025-04-16 08:53:17 - tgstats.collectors.channel_stats - INFO - Проверка существующих записей за 2025-04-16
+2025-04-16 08:53:17 - tgstats.collectors.channel_stats - INFO - Создание новой записи статистики
+2025-04-16 08:53:17 - tgstats.collectors.channel_stats - INFO - Сохранение изменений в базе данных
+2025-04-16 08:53:17 - tgstats.collectors.channel_stats - INFO - Статистика канала успешно сохранена
+2025-04-16 08:53:17 - tgstats.run - INFO - Коллектор ChannelStatsCollector успешно завершил работу
+2025-04-16 08:53:17 - tgstats.run - INFO - Запуск коллектора: ChannelPostsCollector
+2025-04-16 08:53:17 - tgstats.collectors.channel_posts - INFO - Начало сбора постов канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:53:17 - tgstats.run - ERROR - Ошибка в коллекторе ChannelPostsCollector: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "/home/artem/tgstat/tgstats/run.py", line 59, in main
+    await collector.run(channel)
+  File "/home/artem/tgstat/tgstats/collectors/channel_posts.py", line 29, in run
+    if message.date < week_ago:
+       ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-04-16 08:53:17 - tgstats.run - INFO - Запуск коллектора: ChannelParticipantsCollector
+2025-04-16 08:53:17 - tgstats.collectors.channel_participants - INFO - Начало сбора участников канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:53:18 - tgstats.run - ERROR - Ошибка в коллекторе ChannelParticipantsCollector: 'User' object has no attribute 'date'
+Traceback (most recent call last):
+  File "/home/artem/tgstat/tgstats/run.py", line 59, in main
+    await collector.run(channel)
+  File "/home/artem/tgstat/tgstats/collectors/channel_participants.py", line 28, in run
+    if not user.date:
+           ^^^^^^^^^
+AttributeError: 'User' object has no attribute 'date'
+2025-04-16 08:53:18 - tgstats.run - INFO - Запуск коллектора: ChannelActivityCollector
+2025-04-16 08:53:18 - tgstats.collectors.channel_activity - INFO - Начало сбора активности канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:53:18 - tgstats.run - ERROR - Ошибка в коллекторе ChannelActivityCollector: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "/home/artem/tgstat/tgstats/run.py", line 59, in main
+    await collector.run(channel)
+  File "/home/artem/tgstat/tgstats/collectors/channel_activity.py", line 33, in run
+    if post.date < week_ago:
+       ^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+2025-04-16 08:53:18 - tgstats.run - INFO - Запуск коллектора: DiscussionStatsCollector
+2025-04-16 08:53:18 - tgstats.collectors.discussion_stats - INFO - Начало сбора статистики обсуждений канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:53:18 - tgstats.collectors.discussion_stats - INFO - Статистика обсуждений сохранена: 0 комментариев, 0 активных пользователей
+2025-04-16 08:53:18 - tgstats.run - INFO - Коллектор DiscussionStatsCollector успешно завершил работу
+2025-04-16 08:53:18 - tgstats.run - INFO - Отключение клиента Telegram
+2025-04-16 08:53:18 - tgstats.run - INFO - Сбор статистики завершен
+2025-04-16 08:56:03 - tgstats.run - INFO - Запуск сбора статистики канала
+2025-04-16 08:56:03 - tgstats.run - INFO - Инициализация клиента Telegram
+2025-04-16 08:56:03 - tgstats.client - INFO - Найден локальный файл сессии: tg-post.session
+2025-04-16 08:56:03 - tgstats.client - INFO - Создание клиента Telegram с сессией: tg-post.session
+2025-04-16 08:56:04 - tgstats.run - INFO - Инициализация базы данных
+2025-04-16 08:56:04 - tgstats.run - INFO - Используется ID канала: 2643969088
+2025-04-16 08:56:04 - tgstats.run - INFO - Запуск коллектора: ChannelStatsCollector
+2025-04-16 08:56:04 - tgstats.collectors.channel_stats - INFO - Начало сбора статистики канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:56:04 - tgstats.collectors.channel_stats - INFO - Получение информации о канале
+2025-04-16 08:56:04 - tgstats.collectors.channel_stats - INFO - Получена информация о канале: Те самые фото что банит инстаграм (Reborn) (ID: 2643969088)
+2025-04-16 08:56:04 - tgstats.collectors.channel_stats - INFO - Получение полной информации о канале
+2025-04-16 08:56:04 - tgstats.collectors.channel_stats - INFO - Получена полная информация о канале. Подписчиков: 6
+2025-04-16 08:56:04 - tgstats.collectors.channel_stats - INFO - Преобразование данных для сохранения
+2025-04-16 08:56:04 - tgstats.collectors.channel_stats - INFO - Проверка существующих записей за 2025-04-16
+2025-04-16 08:56:04 - tgstats.collectors.channel_stats - INFO - Создание новой записи статистики
+2025-04-16 08:56:04 - tgstats.collectors.channel_stats - INFO - Сохранение изменений в базе данных
+2025-04-16 08:56:04 - tgstats.collectors.channel_stats - INFO - Статистика канала успешно сохранена
+2025-04-16 08:56:04 - tgstats.run - INFO - Коллектор ChannelStatsCollector успешно завершил работу
+2025-04-16 08:56:04 - tgstats.run - INFO - Запуск коллектора: ChannelPostsCollector
+2025-04-16 08:56:04 - tgstats.collectors.channel_posts - INFO - Начало сбора постов канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:56:05 - tgstats.run - ERROR - Ошибка в коллекторе ChannelPostsCollector: Incompatible collection type: MessageReactions is not list-like
+Traceback (most recent call last):
+  File "/home/artem/tgstat/tgstats/run.py", line 59, in main
+    await collector.run(channel)
+  File "/home/artem/tgstat/tgstats/collectors/channel_posts.py", line 51, in run
+    post = ChannelPost(
+           ^^^^^^^^^^^^
+  File "<string>", line 4, in __init__
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/state.py", line 571, in _initialize_instance
+    with util.safe_reraise():
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/state.py", line 569, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/decl_base.py", line 2178, in _declarative_constructor
+    setattr(self, k, kwargs[k])
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/attributes.py", line 537, in __set__
+    self.impl.set(
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/attributes.py", line 1941, in set
+    raise TypeError(
+TypeError: Incompatible collection type: MessageReactions is not list-like
+2025-04-16 08:56:05 - tgstats.run - INFO - Запуск коллектора: ChannelParticipantsCollector
+2025-04-16 08:56:05 - tgstats.collectors.channel_participants - INFO - Начало сбора участников канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:56:05 - tgstats.collectors.channel_participants - INFO - Участники канала сохранены
+2025-04-16 08:56:05 - tgstats.run - INFO - Коллектор ChannelParticipantsCollector успешно завершил работу
+2025-04-16 08:56:05 - tgstats.run - INFO - Запуск коллектора: ChannelActivityCollector
+2025-04-16 08:56:05 - tgstats.collectors.channel_activity - INFO - Начало сбора активности канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:56:06 - tgstats.run - ERROR - Ошибка в коллекторе ChannelActivityCollector: 'MessageReactions' object is not iterable
+Traceback (most recent call last):
+  File "/home/artem/tgstat/tgstats/run.py", line 59, in main
+    await collector.run(channel)
+  File "/home/artem/tgstat/tgstats/collectors/channel_activity.py", line 55, in run
+    total_reactions += sum(reaction.count for reaction in post.reactions)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'MessageReactions' object is not iterable
+2025-04-16 08:56:06 - tgstats.run - INFO - Запуск коллектора: DiscussionStatsCollector
+2025-04-16 08:56:06 - tgstats.collectors.discussion_stats - INFO - Начало сбора статистики обсуждений канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:56:06 - tgstats.collectors.discussion_stats - INFO - Статистика обсуждений сохранена: 0 комментариев, 0 активных пользователей
+2025-04-16 08:56:06 - tgstats.run - INFO - Коллектор DiscussionStatsCollector успешно завершил работу
+2025-04-16 08:56:06 - tgstats.run - INFO - Отключение клиента Telegram
+2025-04-16 08:56:06 - tgstats.run - INFO - Сбор статистики завершен
+2025-04-16 08:57:35 - tgstats.run - INFO - Запуск сбора статистики канала
+2025-04-16 08:57:35 - tgstats.run - INFO - Инициализация клиента Telegram
+2025-04-16 08:57:35 - tgstats.client - INFO - Найден локальный файл сессии: tg-post.session
+2025-04-16 08:57:35 - tgstats.client - INFO - Создание клиента Telegram с сессией: tg-post.session
+2025-04-16 08:57:36 - tgstats.run - INFO - Инициализация базы данных
+2025-04-16 08:57:36 - tgstats.run - INFO - Используется ID канала: 2643969088
+2025-04-16 08:57:36 - tgstats.run - INFO - Запуск коллектора: ChannelStatsCollector
+2025-04-16 08:57:36 - tgstats.collectors.channel_stats - INFO - Начало сбора статистики канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:57:36 - tgstats.collectors.channel_stats - INFO - Получение информации о канале
+2025-04-16 08:57:36 - tgstats.collectors.channel_stats - INFO - Получена информация о канале: Те самые фото что банит инстаграм (Reborn) (ID: 2643969088)
+2025-04-16 08:57:36 - tgstats.collectors.channel_stats - INFO - Получение полной информации о канале
+2025-04-16 08:57:36 - tgstats.collectors.channel_stats - INFO - Получена полная информация о канале. Подписчиков: 6
+2025-04-16 08:57:36 - tgstats.collectors.channel_stats - INFO - Преобразование данных для сохранения
+2025-04-16 08:57:36 - tgstats.collectors.channel_stats - INFO - Проверка существующих записей за 2025-04-16
+2025-04-16 08:57:36 - tgstats.collectors.channel_stats - INFO - Создание новой записи статистики
+2025-04-16 08:57:36 - tgstats.collectors.channel_stats - INFO - Сохранение изменений в базе данных
+2025-04-16 08:57:36 - tgstats.collectors.channel_stats - INFO - Статистика канала успешно сохранена
+2025-04-16 08:57:36 - tgstats.run - INFO - Коллектор ChannelStatsCollector успешно завершил работу
+2025-04-16 08:57:36 - tgstats.run - INFO - Запуск коллектора: ChannelPostsCollector
+2025-04-16 08:57:36 - tgstats.collectors.channel_posts - INFO - Начало сбора постов канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:57:36 - tgstats.run - ERROR - Ошибка в коллекторе ChannelPostsCollector: 'total_reactions' is an invalid keyword argument for ChannelPost
+Traceback (most recent call last):
+  File "/home/artem/tgstat/tgstats/run.py", line 59, in main
+    await collector.run(channel)
+  File "/home/artem/tgstat/tgstats/collectors/channel_posts.py", line 56, in run
+    post = ChannelPost(
+           ^^^^^^^^^^^^
+  File "<string>", line 4, in __init__
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/state.py", line 571, in _initialize_instance
+    with util.safe_reraise():
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/state.py", line 569, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/decl_base.py", line 2175, in _declarative_constructor
+    raise TypeError(
+TypeError: 'total_reactions' is an invalid keyword argument for ChannelPost
+2025-04-16 08:57:36 - tgstats.run - INFO - Запуск коллектора: ChannelParticipantsCollector
+2025-04-16 08:57:36 - tgstats.collectors.channel_participants - INFO - Начало сбора участников канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:57:37 - tgstats.collectors.channel_participants - INFO - Участники канала сохранены
+2025-04-16 08:57:37 - tgstats.run - INFO - Коллектор ChannelParticipantsCollector успешно завершил работу
+2025-04-16 08:57:37 - tgstats.run - INFO - Запуск коллектора: ChannelActivityCollector
+2025-04-16 08:57:37 - tgstats.collectors.channel_activity - INFO - Начало сбора активности канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:57:37 - tgstats.collectors.channel_activity - INFO - Активность канала за последнюю неделю сохранена: 4 постов, 12 просмотров
+2025-04-16 08:57:37 - tgstats.collectors.channel_activity - INFO - Распределение просмотров по часам:
+2025-04-16 08:57:37 - tgstats.collectors.channel_activity - INFO -   05:00 - 5 просмотров
+2025-04-16 08:57:37 - tgstats.collectors.channel_activity - INFO -   19:00 - 7 просмотров
+2025-04-16 08:57:37 - tgstats.run - INFO - Коллектор ChannelActivityCollector успешно завершил работу
+2025-04-16 08:57:37 - tgstats.run - INFO - Запуск коллектора: DiscussionStatsCollector
+2025-04-16 08:57:37 - tgstats.collectors.discussion_stats - INFO - Начало сбора статистики обсуждений канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:57:37 - tgstats.collectors.discussion_stats - INFO - Статистика обсуждений сохранена: 0 комментариев, 0 активных пользователей
+2025-04-16 08:57:37 - tgstats.run - INFO - Коллектор DiscussionStatsCollector успешно завершил работу
+2025-04-16 08:57:37 - tgstats.run - INFO - Отключение клиента Telegram
+2025-04-16 08:57:37 - tgstats.run - INFO - Сбор статистики завершен
+2025-04-16 08:59:54 - tgstats.run - INFO - Запуск сбора статистики канала
+2025-04-16 08:59:54 - tgstats.run - INFO - Инициализация клиента Telegram
+2025-04-16 08:59:54 - tgstats.client - INFO - Найден локальный файл сессии: tg-post.session
+2025-04-16 08:59:54 - tgstats.client - INFO - Создание клиента Telegram с сессией: tg-post.session
+2025-04-16 08:59:54 - tgstats.run - INFO - Инициализация базы данных
+2025-04-16 08:59:55 - tgstats.run - INFO - Используется ID канала: 2643969088
+2025-04-16 08:59:55 - tgstats.run - INFO - Запуск коллектора: ChannelStatsCollector
+2025-04-16 08:59:55 - tgstats.collectors.channel_stats - INFO - Начало сбора статистики канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:59:55 - tgstats.collectors.channel_stats - INFO - Получение информации о канале
+2025-04-16 08:59:55 - tgstats.collectors.channel_stats - INFO - Получена информация о канале: Те самые фото что банит инстаграм (Reborn) (ID: 2643969088)
+2025-04-16 08:59:55 - tgstats.collectors.channel_stats - INFO - Получение полной информации о канале
+2025-04-16 08:59:55 - tgstats.collectors.channel_stats - INFO - Получена полная информация о канале. Подписчиков: 6
+2025-04-16 08:59:55 - tgstats.collectors.channel_stats - INFO - Преобразование данных для сохранения
+2025-04-16 08:59:55 - tgstats.collectors.channel_stats - INFO - Проверка существующих записей за 2025-04-16
+2025-04-16 08:59:55 - tgstats.collectors.channel_stats - INFO - Создание новой записи статистики
+2025-04-16 08:59:55 - tgstats.collectors.channel_stats - INFO - Сохранение изменений в базе данных
+2025-04-16 08:59:55 - tgstats.collectors.channel_stats - INFO - Статистика канала успешно сохранена
+2025-04-16 08:59:55 - tgstats.run - INFO - Коллектор ChannelStatsCollector успешно завершил работу
+2025-04-16 08:59:55 - tgstats.run - INFO - Запуск коллектора: ChannelPostsCollector
+2025-04-16 08:59:55 - tgstats.collectors.channel_posts - INFO - Начало сбора постов канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:59:55 - tgstats.collectors.channel_posts - INFO - Посты канала за последнюю неделю сохранены
+2025-04-16 08:59:55 - tgstats.run - ERROR - Ошибка в коллекторе ChannelPostsCollector: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(psycopg2.errors.ForeignKeyViolation) insert or update on table "post_reactions" violates foreign key constraint "post_reactions_post_id_fkey"
+DETAIL:  Key (post_id)=(10) is not present in table "channel_posts".
+
+[SQL: INSERT INTO post_reactions (post_id, reaction, count, date) VALUES (%(post_id)s, %(reaction)s, %(count)s, %(date)s) RETURNING post_reactions.id]
+[parameters: {'post_id': 10, 'reaction': '❤', 'count': 1, 'date': datetime.datetime(2025, 4, 16, 5, 12, 2)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Traceback (most recent call last):
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.ForeignKeyViolation: insert or update on table "post_reactions" violates foreign key constraint "post_reactions_post_id_fkey"
+DETAIL:  Key (post_id)=(10) is not present in table "channel_posts".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/artem/tgstat/tgstats/run.py", line 59, in main
+    await collector.run(channel)
+  File "/home/artem/tgstat/tgstats/collectors/channel_posts.py", line 83, in run
+    ).first()
+      ^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2858, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2230, in _execute_internal
+    ) = compile_state_cls.orm_pre_session_exec(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/context.py", line 577, in orm_pre_session_exec
+    session._autoflush()
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3065, in _autoflush
+    raise e.with_traceback(sys.exc_info()[2])
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 3054, in _autoflush
+    self.flush()
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4353, in flush
+    self._flush(objects)
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4488, in _flush
+    with util.safe_reraise():
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4449, in _flush
+    flush_context.execute()
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(psycopg2.errors.ForeignKeyViolation) insert or update on table "post_reactions" violates foreign key constraint "post_reactions_post_id_fkey"
+DETAIL:  Key (post_id)=(10) is not present in table "channel_posts".
+
+[SQL: INSERT INTO post_reactions (post_id, reaction, count, date) VALUES (%(post_id)s, %(reaction)s, %(count)s, %(date)s) RETURNING post_reactions.id]
+[parameters: {'post_id': 10, 'reaction': '❤', 'count': 1, 'date': datetime.datetime(2025, 4, 16, 5, 12, 2)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-04-16 08:59:55 - tgstats.run - INFO - Запуск коллектора: ChannelParticipantsCollector
+2025-04-16 08:59:55 - tgstats.collectors.channel_participants - INFO - Начало сбора участников канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:59:56 - tgstats.run - ERROR - Ошибка в коллекторе ChannelParticipantsCollector: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(psycopg2.errors.ForeignKeyViolation) insert or update on table "post_reactions" violates foreign key constraint "post_reactions_post_id_fkey"
+DETAIL:  Key (post_id)=(10) is not present in table "channel_posts".
+
+[SQL: INSERT INTO post_reactions (post_id, reaction, count, date) VALUES (%(post_id)s, %(reaction)s, %(count)s, %(date)s) RETURNING post_reactions.id]
+[parameters: {'post_id': 10, 'reaction': '❤', 'count': 1, 'date': datetime.datetime(2025, 4, 16, 5, 12, 2)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+Traceback (most recent call last):
+  File "/home/artem/tgstat/tgstats/run.py", line 59, in main
+    await collector.run(channel)
+  File "/home/artem/tgstat/tgstats/collectors/channel_participants.py", line 30, in run
+    ).first()
+      ^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2858, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2241, in _execute_internal
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2110, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in _connection_for_bind
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 103, in _go
+    self._raise_for_prerequisite_state(fn.__name__, current_state)
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 973, in _raise_for_prerequisite_state
+    raise sa_exc.PendingRollbackError(
+sqlalchemy.exc.PendingRollbackError: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(psycopg2.errors.ForeignKeyViolation) insert or update on table "post_reactions" violates foreign key constraint "post_reactions_post_id_fkey"
+DETAIL:  Key (post_id)=(10) is not present in table "channel_posts".
+
+[SQL: INSERT INTO post_reactions (post_id, reaction, count, date) VALUES (%(post_id)s, %(reaction)s, %(count)s, %(date)s) RETURNING post_reactions.id]
+[parameters: {'post_id': 10, 'reaction': '❤', 'count': 1, 'date': datetime.datetime(2025, 4, 16, 5, 12, 2)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-04-16 08:59:56 - tgstats.run - INFO - Запуск коллектора: ChannelActivityCollector
+2025-04-16 08:59:56 - tgstats.collectors.channel_activity - INFO - Начало сбора активности канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:59:56 - tgstats.run - ERROR - Ошибка в коллекторе ChannelActivityCollector: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(psycopg2.errors.ForeignKeyViolation) insert or update on table "post_reactions" violates foreign key constraint "post_reactions_post_id_fkey"
+DETAIL:  Key (post_id)=(10) is not present in table "channel_posts".
+
+[SQL: INSERT INTO post_reactions (post_id, reaction, count, date) VALUES (%(post_id)s, %(reaction)s, %(count)s, %(date)s) RETURNING post_reactions.id]
+[parameters: {'post_id': 10, 'reaction': '❤', 'count': 1, 'date': datetime.datetime(2025, 4, 16, 5, 12, 2)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+Traceback (most recent call last):
+  File "/home/artem/tgstat/tgstats/run.py", line 59, in main
+    await collector.run(channel)
+  File "/home/artem/tgstat/tgstats/collectors/channel_activity.py", line 64, in run
+    ).first()
+      ^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2858, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2241, in _execute_internal
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2110, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in _connection_for_bind
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 103, in _go
+    self._raise_for_prerequisite_state(fn.__name__, current_state)
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 973, in _raise_for_prerequisite_state
+    raise sa_exc.PendingRollbackError(
+sqlalchemy.exc.PendingRollbackError: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(psycopg2.errors.ForeignKeyViolation) insert or update on table "post_reactions" violates foreign key constraint "post_reactions_post_id_fkey"
+DETAIL:  Key (post_id)=(10) is not present in table "channel_posts".
+
+[SQL: INSERT INTO post_reactions (post_id, reaction, count, date) VALUES (%(post_id)s, %(reaction)s, %(count)s, %(date)s) RETURNING post_reactions.id]
+[parameters: {'post_id': 10, 'reaction': '❤', 'count': 1, 'date': datetime.datetime(2025, 4, 16, 5, 12, 2)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-04-16 08:59:56 - tgstats.run - INFO - Запуск коллектора: DiscussionStatsCollector
+2025-04-16 08:59:56 - tgstats.collectors.discussion_stats - INFO - Начало сбора статистики обсуждений канала: PeerChannel(channel_id=2643969088)
+2025-04-16 08:59:56 - tgstats.run - ERROR - Ошибка в коллекторе DiscussionStatsCollector: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(psycopg2.errors.ForeignKeyViolation) insert or update on table "post_reactions" violates foreign key constraint "post_reactions_post_id_fkey"
+DETAIL:  Key (post_id)=(10) is not present in table "channel_posts".
+
+[SQL: INSERT INTO post_reactions (post_id, reaction, count, date) VALUES (%(post_id)s, %(reaction)s, %(count)s, %(date)s) RETURNING post_reactions.id]
+[parameters: {'post_id': 10, 'reaction': '❤', 'count': 1, 'date': datetime.datetime(2025, 4, 16, 5, 12, 2)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+Traceback (most recent call last):
+  File "/home/artem/tgstat/tgstats/run.py", line 59, in main
+    await collector.run(channel)
+  File "/home/artem/tgstat/tgstats/collectors/discussion_stats.py", line 25, in run
+    ).all()
+      ^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2858, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2241, in _execute_internal
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2110, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in _connection_for_bind
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 103, in _go
+    self._raise_for_prerequisite_state(fn.__name__, current_state)
+  File "/home/artem/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 973, in _raise_for_prerequisite_state
+    raise sa_exc.PendingRollbackError(
+sqlalchemy.exc.PendingRollbackError: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(psycopg2.errors.ForeignKeyViolation) insert or update on table "post_reactions" violates foreign key constraint "post_reactions_post_id_fkey"
+DETAIL:  Key (post_id)=(10) is not present in table "channel_posts".
+
+[SQL: INSERT INTO post_reactions (post_id, reaction, count, date) VALUES (%(post_id)s, %(reaction)s, %(count)s, %(date)s) RETURNING post_reactions.id]
+[parameters: {'post_id': 10, 'reaction': '❤', 'count': 1, 'date': datetime.datetime(2025, 4, 16, 5, 12, 2)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-04-16 08:59:56 - tgstats.run - INFO - Отключение клиента Telegram
+2025-04-16 08:59:56 - tgstats.run - INFO - Сбор статистики завершен
+2025-04-16 09:00:35 - tgstats.run - INFO - Запуск сбора статистики канала
+2025-04-16 09:00:35 - tgstats.run - INFO - Инициализация клиента Telegram
+2025-04-16 09:00:35 - tgstats.client - INFO - Найден локальный файл сессии: tg-post.session
+2025-04-16 09:00:35 - tgstats.client - INFO - Создание клиента Telegram с сессией: tg-post.session
+2025-04-16 09:00:35 - tgstats.run - INFO - Инициализация базы данных
+2025-04-16 09:00:35 - tgstats.run - INFO - Используется ID канала: 2643969088
+2025-04-16 09:00:35 - tgstats.run - INFO - Запуск коллектора: ChannelStatsCollector
+2025-04-16 09:00:35 - tgstats.collectors.channel_stats - INFO - Начало сбора статистики канала: PeerChannel(channel_id=2643969088)
+2025-04-16 09:00:35 - tgstats.collectors.channel_stats - INFO - Получение информации о канале
+2025-04-16 09:00:35 - tgstats.collectors.channel_stats - INFO - Получена информация о канале: Те самые фото что банит инстаграм (Reborn) (ID: 2643969088)
+2025-04-16 09:00:35 - tgstats.collectors.channel_stats - INFO - Получение полной информации о канале
+2025-04-16 09:00:36 - tgstats.collectors.channel_stats - INFO - Получена полная информация о канале. Подписчиков: 6
+2025-04-16 09:00:36 - tgstats.collectors.channel_stats - INFO - Преобразование данных для сохранения
+2025-04-16 09:00:36 - tgstats.collectors.channel_stats - INFO - Проверка существующих записей за 2025-04-16
+2025-04-16 09:00:36 - tgstats.collectors.channel_stats - INFO - Создание новой записи статистики
+2025-04-16 09:00:36 - tgstats.collectors.channel_stats - INFO - Сохранение изменений в базе данных
+2025-04-16 09:00:36 - tgstats.collectors.channel_stats - INFO - Статистика канала успешно сохранена
+2025-04-16 09:00:36 - tgstats.run - INFO - Коллектор ChannelStatsCollector успешно завершил работу
+2025-04-16 09:00:36 - tgstats.run - INFO - Запуск коллектора: ChannelPostsCollector
+2025-04-16 09:00:36 - tgstats.collectors.channel_posts - INFO - Начало сбора постов канала: PeerChannel(channel_id=2643969088)
+2025-04-16 09:00:36 - tgstats.collectors.channel_posts - INFO - Посты канала за последнюю неделю сохранены
+2025-04-16 09:00:36 - tgstats.run - INFO - Коллектор ChannelPostsCollector успешно завершил работу
+2025-04-16 09:00:36 - tgstats.run - INFO - Запуск коллектора: ChannelParticipantsCollector
+2025-04-16 09:00:36 - tgstats.collectors.channel_participants - INFO - Начало сбора участников канала: PeerChannel(channel_id=2643969088)
+2025-04-16 09:00:37 - tgstats.collectors.channel_participants - INFO - Участники канала сохранены
+2025-04-16 09:00:37 - tgstats.run - INFO - Коллектор ChannelParticipantsCollector успешно завершил работу
+2025-04-16 09:00:37 - tgstats.run - INFO - Запуск коллектора: ChannelActivityCollector
+2025-04-16 09:00:37 - tgstats.collectors.channel_activity - INFO - Начало сбора активности канала: PeerChannel(channel_id=2643969088)
+2025-04-16 09:00:37 - tgstats.collectors.channel_activity - INFO - Активность канала за последнюю неделю сохранена: 4 постов, 12 просмотров
+2025-04-16 09:00:37 - tgstats.collectors.channel_activity - INFO - Распределение просмотров по часам:
+2025-04-16 09:00:37 - tgstats.collectors.channel_activity - INFO -   05:00 - 5 просмотров
+2025-04-16 09:00:37 - tgstats.collectors.channel_activity - INFO -   19:00 - 7 просмотров
+2025-04-16 09:00:37 - tgstats.run - INFO - Коллектор ChannelActivityCollector успешно завершил работу
+2025-04-16 09:00:37 - tgstats.run - INFO - Запуск коллектора: DiscussionStatsCollector
+2025-04-16 09:00:37 - tgstats.collectors.discussion_stats - INFO - Начало сбора статистики обсуждений канала: PeerChannel(channel_id=2643969088)
+2025-04-16 09:00:37 - tgstats.collectors.discussion_stats - INFO - Статистика обсуждений сохранена: 0 комментариев, 0 активных пользователей
+2025-04-16 09:00:37 - tgstats.run - INFO - Коллектор DiscussionStatsCollector успешно завершил работу
+2025-04-16 09:00:37 - tgstats.run - INFO - Отключение клиента Telegram
+2025-04-16 09:00:37 - tgstats.run - INFO - Сбор статистики завершен
+2025-04-16 09:07:34 - tgstats.__main__ - INFO - Запуск сбора статистики канала
+2025-04-16 09:07:34 - tgstats.__main__ - INFO - Инициализация клиента Telegram
+2025-04-16 09:07:34 - tgstats.client - INFO - Найден локальный файл сессии: tg-post.session
+2025-04-16 09:07:34 - tgstats.client - INFO - Создание клиента Telegram с сессией: tg-post.session
+2025-04-16 09:07:34 - tgstats.__main__ - INFO - Инициализация базы данных
+2025-04-16 09:07:34 - tgstats.tgstats.database.schema - INFO - Начало обновления схемы базы данных
+2025-04-16 09:07:34 - tgstats.tgstats.database.schema - INFO - Проверка совместимости схемы базы данных
+2025-04-16 09:09:01 - tgstats.__main__ - INFO - Запуск сбора статистики канала
+2025-04-16 09:09:01 - tgstats.__main__ - INFO - Инициализация клиента Telegram
+2025-04-16 09:09:01 - tgstats.client - INFO - Найден локальный файл сессии: tg-post.session
+2025-04-16 09:09:01 - tgstats.client - INFO - Создание клиента Telegram с сессией: tg-post.session
+2025-04-16 09:09:02 - tgstats.__main__ - INFO - Инициализация базы данных
+2025-04-16 09:09:02 - tgstats.tgstats.database.schema - INFO - Начало обновления схемы базы данных
+2025-04-16 09:09:02 - tgstats.tgstats.database.schema - INFO - Проверка совместимости схемы базы данных
+2025-04-16 09:09:02 - tgstats.tgstats.database.schema - INFO - Создание отсутствующей таблицы: hourly_activity
+2025-04-16 09:09:02 - tgstats.tgstats.database.schema - INFO - Схема базы данных успешно обновлена
+2025-04-16 09:09:02 - tgstats.__main__ - INFO - Используется ID канала: 2643969088
+2025-04-16 09:09:02 - tgstats.__main__ - INFO - Отключение клиента Telegram
+2025-04-16 09:09:02 - tgstats.__main__ - INFO - Сбор статистики завершен
+2025-04-16 09:13:17 - tgstats.__main__ - INFO - Запуск сбора статистики канала
+2025-04-16 09:13:17 - tgstats.__main__ - INFO - Инициализация клиента Telegram
+2025-04-16 09:13:17 - tgstats.client - INFO - Найден локальный файл сессии: tg-post.session
+2025-04-16 09:13:17 - tgstats.client - INFO - Создание клиента Telegram с сессией: tg-post.session
+2025-04-16 09:13:20 - tgstats.__main__ - INFO - Инициализация базы данных
+2025-04-16 09:13:20 - tgstats.tgstats.database.schema - INFO - Начало обновления схемы базы данных
+2025-04-16 09:13:20 - tgstats.tgstats.database.schema - INFO - Проверка совместимости схемы базы данных
+2025-04-16 09:13:20 - tgstats.tgstats.database.schema - INFO - Схема базы данных актуальна
+2025-04-16 09:13:20 - tgstats.__main__ - INFO - Используется ID канала: 2643969088
+2025-04-16 09:13:20 - tgstats.__main__ - INFO - Запуск коллектора: ChannelStatsCollector
+2025-04-16 09:13:20 - tgstats.collectors.channel_stats - INFO - Начало сбора статистики канала: PeerChannel(channel_id=2643969088)
+2025-04-16 09:13:20 - tgstats.collectors.channel_stats - INFO - Получение информации о канале
+2025-04-16 09:13:20 - tgstats.collectors.channel_stats - INFO - Получена информация о канале: Те самые фото что банит инстаграм (Reborn) (ID: 2643969088)
+2025-04-16 09:13:20 - tgstats.collectors.channel_stats - INFO - Получение полной информации о канале
+2025-04-16 09:13:20 - tgstats.collectors.channel_stats - INFO - Получена полная информация о канале. Подписчиков: 6
+2025-04-16 09:13:20 - tgstats.collectors.channel_stats - INFO - Преобразование данных для сохранения
+2025-04-16 09:13:20 - tgstats.collectors.channel_stats - INFO - Проверка существующих записей за 2025-04-16
+2025-04-16 09:13:20 - tgstats.collectors.channel_stats - INFO - Обновление существующей записи статистики
+2025-04-16 09:13:20 - tgstats.collectors.channel_stats - INFO - Сохранение изменений в базе данных
+2025-04-16 09:13:20 - tgstats.collectors.channel_stats - INFO - Статистика канала успешно сохранена
+2025-04-16 09:13:20 - tgstats.__main__ - INFO - Коллектор ChannelStatsCollector успешно завершил работу
+2025-04-16 09:13:20 - tgstats.__main__ - INFO - Запуск коллектора: ChannelPostsCollector
+2025-04-16 09:13:20 - tgstats.collectors.channel_posts - INFO - Начало сбора постов канала: PeerChannel(channel_id=2643969088)
+2025-04-16 09:13:20 - tgstats.collectors.channel_posts - INFO - Посты канала за последнюю неделю сохранены
+2025-04-16 09:13:20 - tgstats.__main__ - INFO - Коллектор ChannelPostsCollector успешно завершил работу
+2025-04-16 09:13:20 - tgstats.__main__ - INFO - Запуск коллектора: ChannelParticipantsCollector
+2025-04-16 09:13:20 - tgstats.collectors.channel_participants - INFO - Начало сбора участников канала: PeerChannel(channel_id=2643969088)
+2025-04-16 09:13:21 - tgstats.collectors.channel_participants - INFO - Участники канала сохранены
+2025-04-16 09:13:21 - tgstats.__main__ - INFO - Коллектор ChannelParticipantsCollector успешно завершил работу
+2025-04-16 09:13:21 - tgstats.__main__ - INFO - Запуск коллектора: ChannelActivityCollector
+2025-04-16 09:13:21 - tgstats.tgstats.collectors.channel_activity - INFO - Начинаю сбор статистики активности для канала Те самые фото что банит инстаграм (Reborn)
+2025-04-16 09:13:22 - tgstats.tgstats.collectors.channel_activity - INFO - Статистика активности для канала Те самые фото что банит инстаграм (Reborn) успешно сохранена
+2025-04-16 09:13:22 - tgstats.tgstats.collectors.channel_activity - INFO - Час 00:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:13:22 - tgstats.tgstats.collectors.channel_activity - INFO - Час 01:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:13:22 - tgstats.tgstats.collectors.channel_activity - INFO - Час 02:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:13:22 - tgstats.tgstats.collectors.channel_activity - INFO - Час 03:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:13:22 - tgstats.tgstats.collectors.channel_activity - INFO - Час 04:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:13:22 - tgstats.tgstats.collectors.channel_activity - INFO - Час 05:00 - 5 просмотров, 1 репостов, 1 реакций, 1 постов
+2025-04-16 09:13:22 - tgstats.tgstats.collectors.channel_activity - INFO - Час 06:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:13:22 - tgstats.tgstats.collectors.channel_activity - INFO - Час 07:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:13:22 - tgstats.tgstats.collectors.channel_activity - INFO - Час 08:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:13:22 - tgstats.tgstats.collectors.channel_activity - INFO - Час 09:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:13:22 - tgstats.tgstats.collectors.channel_activity - INFO - Час 10:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:13:22 - tgstats.tgstats.collectors.channel_activity - INFO - Час 11:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:13:22 - tgstats.tgstats.collectors.channel_activity - INFO - Час 12:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:13:22 - tgstats.tgstats.collectors.channel_activity - INFO - Час 13:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:13:22 - tgstats.tgstats.collectors.channel_activity - INFO - Час 14:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:13:22 - tgstats.tgstats.collectors.channel_activity - INFO - Час 15:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:13:22 - tgstats.tgstats.collectors.channel_activity - INFO - Час 16:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:13:22 - tgstats.tgstats.collectors.channel_activity - INFO - Час 17:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:13:22 - tgstats.tgstats.collectors.channel_activity - INFO - Час 18:00 - 0 просмотров, 0 репостов, 0 реакций, 1 постов
+2025-04-16 09:13:22 - tgstats.tgstats.collectors.channel_activity - INFO - Час 19:00 - 7 просмотров, 1 репостов, 3 реакций, 2 постов
+2025-04-16 09:13:22 - tgstats.tgstats.collectors.channel_activity - INFO - Час 20:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:13:22 - tgstats.tgstats.collectors.channel_activity - INFO - Час 21:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:13:22 - tgstats.tgstats.collectors.channel_activity - INFO - Час 22:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:13:22 - tgstats.tgstats.collectors.channel_activity - INFO - Час 23:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:13:22 - tgstats.__main__ - INFO - Коллектор ChannelActivityCollector успешно завершил работу
+2025-04-16 09:13:22 - tgstats.__main__ - INFO - Запуск коллектора: DiscussionStatsCollector
+2025-04-16 09:13:22 - tgstats.collectors.discussion_stats - INFO - Начало сбора статистики обсуждений канала: PeerChannel(channel_id=2643969088)
+2025-04-16 09:13:23 - tgstats.collectors.discussion_stats - INFO - Статистика обсуждений сохранена: 0 комментариев, 0 активных пользователей
+2025-04-16 09:13:23 - tgstats.__main__ - INFO - Коллектор DiscussionStatsCollector успешно завершил работу
+2025-04-16 09:13:23 - tgstats.__main__ - INFO - Отключение клиента Telegram
+2025-04-16 09:13:23 - tgstats.__main__ - INFO - Сбор статистики завершен
+2025-04-16 09:16:48 - tgstats.__main__ - INFO - Запуск сбора статистики канала
+2025-04-16 09:16:48 - tgstats.__main__ - INFO - Инициализация клиента Telegram
+2025-04-16 09:16:48 - tgstats.client - INFO - Найден локальный файл сессии: tg-post.session
+2025-04-16 09:16:48 - tgstats.client - INFO - Создание клиента Telegram с сессией: tg-post.session
+2025-04-16 09:16:48 - tgstats.__main__ - INFO - Инициализация базы данных
+2025-04-16 09:16:48 - tgstats.tgstats.database.schema - INFO - Начало обновления схемы базы данных
+2025-04-16 09:16:48 - tgstats.tgstats.database.schema - INFO - Проверка совместимости схемы базы данных
+2025-04-16 09:16:48 - tgstats.tgstats.database.schema - INFO - Схема базы данных актуальна
+2025-04-16 09:16:48 - tgstats.__main__ - INFO - Используется ID канала: 2643969088
+2025-04-16 09:16:48 - tgstats.__main__ - INFO - Запуск коллектора: ChannelStatsCollector
+2025-04-16 09:16:48 - tgstats.collectors.channel_stats - INFO - Начало сбора статистики канала: PeerChannel(channel_id=2643969088)
+2025-04-16 09:16:48 - tgstats.collectors.channel_stats - INFO - Получение информации о канале
+2025-04-16 09:16:48 - tgstats.collectors.channel_stats - INFO - Получена информация о канале: Те самые фото что банит инстаграм (Reborn) (ID: 2643969088)
+2025-04-16 09:16:48 - tgstats.collectors.channel_stats - INFO - Получение полной информации о канале
+2025-04-16 09:16:48 - tgstats.collectors.channel_stats - INFO - Получена полная информация о канале. Подписчиков: 6
+2025-04-16 09:16:48 - tgstats.collectors.channel_stats - INFO - Преобразование данных для сохранения
+2025-04-16 09:16:48 - tgstats.collectors.channel_stats - INFO - Проверка существующих записей за 2025-04-16
+2025-04-16 09:16:48 - tgstats.collectors.channel_stats - INFO - Обновление существующей записи статистики
+2025-04-16 09:16:48 - tgstats.collectors.channel_stats - INFO - Сохранение изменений в базе данных
+2025-04-16 09:16:49 - tgstats.collectors.channel_stats - INFO - Статистика канала успешно сохранена
+2025-04-16 09:16:49 - tgstats.__main__ - INFO - Коллектор ChannelStatsCollector успешно завершил работу
+2025-04-16 09:16:49 - tgstats.__main__ - INFO - Запуск коллектора: ChannelPostsCollector
+2025-04-16 09:16:49 - tgstats.collectors.channel_posts - INFO - Начало сбора постов канала: PeerChannel(channel_id=2643969088)
+2025-04-16 09:16:49 - tgstats.collectors.channel_posts - INFO - Посты канала за последнюю неделю сохранены
+2025-04-16 09:16:49 - tgstats.__main__ - INFO - Коллектор ChannelPostsCollector успешно завершил работу
+2025-04-16 09:16:49 - tgstats.__main__ - INFO - Запуск коллектора: ChannelParticipantsCollector
+2025-04-16 09:16:49 - tgstats.collectors.channel_participants - INFO - Начало сбора участников канала: PeerChannel(channel_id=2643969088)
+2025-04-16 09:16:49 - tgstats.collectors.channel_participants - INFO - Участники канала сохранены
+2025-04-16 09:16:49 - tgstats.__main__ - INFO - Коллектор ChannelParticipantsCollector успешно завершил работу
+2025-04-16 09:16:49 - tgstats.__main__ - INFO - Запуск коллектора: ChannelActivityCollector
+2025-04-16 09:16:49 - tgstats.tgstats.collectors.channel_activity - INFO - Начинаю сбор статистики активности для канала Те самые фото что банит инстаграм (Reborn)
+2025-04-16 09:16:51 - tgstats.tgstats.collectors.channel_activity - INFO - Статистика активности для канала Те самые фото что банит инстаграм (Reborn) успешно сохранена
+2025-04-16 09:16:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 00:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:16:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 01:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:16:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 02:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:16:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 03:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:16:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 04:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:16:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 05:00 - 5 просмотров, 1 репостов, 1 реакций, 1 постов
+2025-04-16 09:16:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 06:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:16:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 07:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:16:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 08:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:16:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 09:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:16:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 10:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:16:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 11:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:16:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 12:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:16:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 13:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:16:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 14:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:16:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 15:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:16:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 16:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:16:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 17:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:16:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 18:00 - 0 просмотров, 0 репостов, 0 реакций, 1 постов
+2025-04-16 09:16:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 19:00 - 7 просмотров, 1 репостов, 3 реакций, 2 постов
+2025-04-16 09:16:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 20:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:16:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 21:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:16:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 22:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:16:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 23:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 09:16:51 - tgstats.__main__ - INFO - Коллектор ChannelActivityCollector успешно завершил работу
+2025-04-16 09:16:51 - tgstats.__main__ - INFO - Запуск коллектора: DiscussionStatsCollector
+2025-04-16 09:16:51 - tgstats.collectors.discussion_stats - INFO - Начало сбора статистики обсуждений канала: PeerChannel(channel_id=2643969088)
+2025-04-16 09:16:51 - tgstats.collectors.discussion_stats - INFO - Статистика обсуждений сохранена: 0 комментариев, 0 активных пользователей
+2025-04-16 09:16:51 - tgstats.__main__ - INFO - Коллектор DiscussionStatsCollector успешно завершил работу
+2025-04-16 09:16:51 - tgstats.__main__ - INFO - Отключение клиента Telegram
+2025-04-16 09:16:51 - tgstats.__main__ - INFO - Сбор статистики завершен
+2025-04-16 09:18:08 - tgstats.__main__ - INFO - Начало анализа данных
+2025-04-16 09:19:55 - tgstats.__main__ - INFO - Начало анализа данных
+2025-04-16 09:21:45 - tgstats.__main__ - INFO - Начало анализа данных
+2025-04-16 09:21:45 - tgstats.tgstats.database.schema - INFO - Начало обновления схемы базы данных
+2025-04-16 09:21:45 - tgstats.tgstats.database.schema - INFO - Проверка совместимости схемы базы данных
+2025-04-16 09:21:45 - tgstats.tgstats.database.schema - INFO - Схема базы данных актуальна
+2025-04-16 09:21:45 - tgstats.__main__ - INFO - Статистика канала Unknown Channel на 2025-04-16 06:00:36.188901:
+2025-04-16 09:21:45 - tgstats.__main__ - INFO - Подписчиков: 6
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Начало анализа данных
+2025-04-16 09:22:51 - tgstats.tgstats.database.schema - INFO - Начало обновления схемы базы данных
+2025-04-16 09:22:51 - tgstats.tgstats.database.schema - INFO - Проверка совместимости схемы базы данных
+2025-04-16 09:22:51 - tgstats.tgstats.database.schema - INFO - Схема базы данных актуальна
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Статистика канала Unknown Channel на 2025-04-16 06:00:36.188901:
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Подписчиков: 6
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Всего постов: 4
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - 
+Активность по часам за последние 24 часа:
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Час 0: 0 просмотров
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Час 1: 0 просмотров
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Час 2: 0 просмотров
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Час 3: 0 просмотров
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Час 4: 0 просмотров
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Час 5: 5 просмотров
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Час 6: 0 просмотров
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Час 7: 0 просмотров
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Час 8: 0 просмотров
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Час 9: 0 просмотров
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Час 10: 0 просмотров
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Час 11: 0 просмотров
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Час 12: 0 просмотров
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Час 13: 0 просмотров
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Час 14: 0 просмотров
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Час 15: 0 просмотров
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Час 16: 0 просмотров
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Час 17: 0 просмотров
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Час 18: 0 просмотров
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Час 19: 7 просмотров
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Час 20: 0 просмотров
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Час 21: 0 просмотров
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Час 22: 0 просмотров
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Час 23: 0 просмотров
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - 
+Статистика обсуждений на 2025-04-16 06:00:37.870536:
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Всего комментариев: 0
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Активных пользователей: 0
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Анализ данных завершен
+2025-04-16 09:22:51 - tgstats.tgstats.database.schema - INFO - Начало обновления схемы базы данных
+2025-04-16 09:22:51 - tgstats.tgstats.database.schema - INFO - Проверка совместимости схемы базы данных
+2025-04-16 09:22:51 - tgstats.tgstats.database.schema - INFO - Схема базы данных актуальна
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Всего участников: 6
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Участников с номером телефона: 3
+2025-04-16 09:22:51 - tgstats.__main__ - INFO - Участников с raw данными: 6
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Начало анализа данных
+2025-04-16 09:23:38 - tgstats.tgstats.database.schema - INFO - Начало обновления схемы базы данных
+2025-04-16 09:23:38 - tgstats.tgstats.database.schema - INFO - Проверка совместимости схемы базы данных
+2025-04-16 09:23:38 - tgstats.tgstats.database.schema - INFO - Схема базы данных актуальна
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Статистика канала Unknown Channel на 2025-04-16 06:00:36.188901:
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Подписчиков: 6
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Всего постов: 4
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - 
+Активность по часам за последние 24 часа:
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Час 0: 0 просмотров
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Час 1: 0 просмотров
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Час 2: 0 просмотров
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Час 3: 0 просмотров
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Час 4: 0 просмотров
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Час 5: 5 просмотров
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Час 6: 0 просмотров
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Час 7: 0 просмотров
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Час 8: 0 просмотров
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Час 9: 0 просмотров
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Час 10: 0 просмотров
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Час 11: 0 просмотров
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Час 12: 0 просмотров
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Час 13: 0 просмотров
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Час 14: 0 просмотров
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Час 15: 0 просмотров
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Час 16: 0 просмотров
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Час 17: 0 просмотров
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Час 18: 0 просмотров
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Час 19: 7 просмотров
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Час 20: 0 просмотров
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Час 21: 0 просмотров
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Час 22: 0 просмотров
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Час 23: 0 просмотров
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - 
+Статистика обсуждений на 2025-04-16 06:00:37.870536:
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Всего комментариев: 0
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Активных пользователей: 0
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Анализ данных завершен
+2025-04-16 09:23:38 - tgstats.tgstats.database.schema - INFO - Начало обновления схемы базы данных
+2025-04-16 09:23:38 - tgstats.tgstats.database.schema - INFO - Проверка совместимости схемы базы данных
+2025-04-16 09:23:38 - tgstats.tgstats.database.schema - INFO - Схема базы данных актуальна
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Всего участников: 6
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Участников с номером телефона: 3
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Участников с raw данными: 6
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - Пример raw данных:
+2025-04-16 09:23:38 - tgstats.__main__ - INFO - {
+  "_": "User",
+  "id": 5602891357,
+  "is_self": false,
+  "contact": false,
+  "mutual_contact": false,
+  "deleted": false,
+  "bot": false,
+  "bot_chat_history": false,
+  "bot_nochats": false,
+  "verified": false,
+  "restricted": false,
+  "min": false,
+  "bot_inline_geo": false,
+  "support": false,
+  "scam": false,
+  "apply_min_photo": true,
+  "fake": false,
+  "bot_attach_menu": false,
+  "premium": false,
+  "attach_menu_enabled": false,
+  "bot_can_edit": false,
+  "close_friend": false,
+  "stories_hidden": false,
+  "stories_unavailable": true,
+  "contact_require_premium": false,
+  "bot_business": false,
+  "bot_has_main_app": false,
+  "access_hash": -5767915232657412935,
+  "first_name": "Ксения",
+  "last_name": "Мемная",
+  "username": "Susgay20",
+  "phone": null,
+  "photo": {
+    "_": "UserProfilePhoto",
+    "photo_id": 5458366476860910975,
+    "dc_id": 2,
+    "has_video": false,
+    "personal": false,
+    "stripped_thumb": "\u0001\b\b�\u0001\t�����*�"
+  },
+  "status": {
+    "_": "UserStatusRecently",
+    "by_me": false
+  },
+  "bot_info_version": null,
+  "restriction_reason": [],
+  "bot_inline_placeholder": null,
+  "lang_code": null,
+  "emoji_status": null,
+  "usernames": [],
+  "stories_max_id": null,
+  "color": null,
+  "profile_color": null,
+  "bot_active_users": null,
+  "bot_verification_icon": null
+}
+2025-04-16 06:51:30 - tgstats.__main__ - INFO - Запуск сбора статистики канала
+2025-04-16 06:51:30 - tgstats.__main__ - INFO - Инициализация клиента Telegram
+2025-04-16 06:51:30 - tgstats.client - INFO - Найден локальный файл сессии: tg-post.session
+2025-04-16 06:51:30 - tgstats.client - INFO - Создание клиента Telegram с сессией: tg-post.session
+2025-04-16 06:55:17 - tgstats.__main__ - INFO - Запуск сбора статистики канала
+2025-04-16 06:55:17 - tgstats.__main__ - INFO - Инициализация клиента Telegram
+2025-04-16 06:55:17 - tgstats.client - INFO - Найден локальный файл сессии: tg-post.session
+2025-04-16 06:55:17 - tgstats.client - INFO - Создание клиента Telegram с сессией: tg-post.session
+2025-04-16 06:55:18 - tgstats.__main__ - INFO - Инициализация базы данных
+2025-04-16 06:55:18 - tgstats.tgstats.database.schema - INFO - Начало обновления схемы базы данных
+2025-04-16 06:55:18 - tgstats.tgstats.database.schema - INFO - Проверка совместимости схемы базы данных
+2025-04-16 06:55:18 - tgstats.tgstats.database.schema - INFO - Схема базы данных актуальна
+2025-04-16 06:55:18 - tgstats.__main__ - INFO - Используется юзернейм канала: 
+2025-04-16 06:55:18 - tgstats.__main__ - INFO - Запуск коллектора: ChannelStatsCollector
+2025-04-16 06:55:18 - tgstats.collectors.channel_stats - INFO - Начало сбора статистики канала: 
+2025-04-16 06:55:18 - tgstats.collectors.channel_stats - INFO - Получение информации о канале
+2025-04-16 06:55:18 - tgstats.__main__ - ERROR - Ошибка в коллекторе ChannelStatsCollector: Cannot find any entity corresponding to ""
+Traceback (most recent call last):
+  File "/app/tgstats/run.py", line 57, in main
+    await collector.run(channel)
+  File "/app/tgstats/collectors/channel_stats.py", line 29, in run
+    chat = await self.client.get_entity(channel)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telethon/client/users.py", line 337, in get_entity
+    result.append(await self._get_entity_from_string(x))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telethon/client/users.py", line 576, in _get_entity_from_string
+    raise ValueError(
+ValueError: Cannot find any entity corresponding to ""
+2025-04-16 06:55:18 - tgstats.__main__ - INFO - Запуск коллектора: ChannelPostsCollector
+2025-04-16 06:55:18 - tgstats.collectors.channel_posts - INFO - Начало сбора постов канала: 
+2025-04-16 06:55:18 - tgstats.__main__ - ERROR - Ошибка в коллекторе ChannelPostsCollector: Cannot find any entity corresponding to ""
+Traceback (most recent call last):
+  File "/app/tgstats/run.py", line 57, in main
+    await collector.run(channel)
+  File "/app/tgstats/collectors/channel_posts.py", line 16, in run
+    chat = await self.client.get_entity(channel)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telethon/client/users.py", line 337, in get_entity
+    result.append(await self._get_entity_from_string(x))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telethon/client/users.py", line 576, in _get_entity_from_string
+    raise ValueError(
+ValueError: Cannot find any entity corresponding to ""
+2025-04-16 06:55:18 - tgstats.__main__ - INFO - Запуск коллектора: ChannelParticipantsCollector
+2025-04-16 06:55:18 - tgstats.collectors.channel_participants - INFO - Начало сбора участников канала: 
+2025-04-16 06:55:18 - tgstats.__main__ - ERROR - Ошибка в коллекторе ChannelParticipantsCollector: Cannot find any entity corresponding to ""
+Traceback (most recent call last):
+  File "/app/tgstats/run.py", line 57, in main
+    await collector.run(channel)
+  File "/app/tgstats/collectors/channel_participants.py", line 17, in run
+    chat = await self.client.get_entity(channel)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telethon/client/users.py", line 337, in get_entity
+    result.append(await self._get_entity_from_string(x))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telethon/client/users.py", line 576, in _get_entity_from_string
+    raise ValueError(
+ValueError: Cannot find any entity corresponding to ""
+2025-04-16 06:55:18 - tgstats.__main__ - INFO - Запуск коллектора: ChannelActivityCollector
+2025-04-16 06:55:18 - tgstats.__main__ - ERROR - Ошибка в коллекторе ChannelActivityCollector: Cannot find any entity corresponding to ""
+Traceback (most recent call last):
+  File "/app/tgstats/run.py", line 57, in main
+    await collector.run(channel)
+  File "/app/tgstats/collectors/channel_activity.py", line 19, in run
+    self.channel = await self.client.get_entity(channel)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telethon/client/users.py", line 337, in get_entity
+    result.append(await self._get_entity_from_string(x))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telethon/client/users.py", line 576, in _get_entity_from_string
+    raise ValueError(
+ValueError: Cannot find any entity corresponding to ""
+2025-04-16 06:55:18 - tgstats.__main__ - INFO - Запуск коллектора: DiscussionStatsCollector
+2025-04-16 06:55:18 - tgstats.collectors.discussion_stats - INFO - Начало сбора статистики обсуждений канала: 
+2025-04-16 06:55:18 - tgstats.__main__ - ERROR - Ошибка в коллекторе DiscussionStatsCollector: Cannot find any entity corresponding to ""
+Traceback (most recent call last):
+  File "/app/tgstats/run.py", line 57, in main
+    await collector.run(channel)
+  File "/app/tgstats/collectors/discussion_stats.py", line 16, in run
+    chat = await self.client.get_entity(channel)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telethon/client/users.py", line 337, in get_entity
+    result.append(await self._get_entity_from_string(x))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telethon/client/users.py", line 576, in _get_entity_from_string
+    raise ValueError(
+ValueError: Cannot find any entity corresponding to ""
+2025-04-16 06:55:18 - tgstats.__main__ - INFO - Отключение клиента Telegram
+2025-04-16 06:55:18 - tgstats.__main__ - INFO - Сбор статистики завершен
+2025-04-16 06:56:13 - tgstats.__main__ - INFO - Запуск сбора статистики канала
+2025-04-16 06:56:13 - tgstats.__main__ - INFO - Инициализация клиента Telegram
+2025-04-16 06:56:13 - tgstats.client - INFO - Найден локальный файл сессии: tg-post.session
+2025-04-16 06:56:13 - tgstats.client - INFO - Создание клиента Telegram с сессией: tg-post.session
+2025-04-16 06:56:14 - tgstats.__main__ - INFO - Инициализация базы данных
+2025-04-16 06:56:14 - tgstats.tgstats.database.schema - INFO - Начало обновления схемы базы данных
+2025-04-16 06:56:14 - tgstats.tgstats.database.schema - INFO - Проверка совместимости схемы базы данных
+2025-04-16 06:56:14 - tgstats.tgstats.database.schema - INFO - Схема базы данных актуальна
+2025-04-16 06:56:14 - tgstats.__main__ - INFO - Используется ID канала: 2643969088
+2025-04-16 06:56:14 - tgstats.__main__ - INFO - Запуск коллектора: ChannelStatsCollector
+2025-04-16 06:56:14 - tgstats.collectors.channel_stats - INFO - Начало сбора статистики канала: PeerChannel(channel_id=2643969088)
+2025-04-16 06:56:14 - tgstats.collectors.channel_stats - INFO - Получение информации о канале
+2025-04-16 06:56:14 - tgstats.collectors.channel_stats - INFO - Получена информация о канале: Те самые фото что банит инстаграм (Reborn) (ID: 2643969088)
+2025-04-16 06:56:14 - tgstats.collectors.channel_stats - INFO - Получение полной информации о канале
+2025-04-16 06:56:14 - tgstats.collectors.channel_stats - INFO - Получена полная информация о канале. Подписчиков: 6
+2025-04-16 06:56:14 - tgstats.collectors.channel_stats - INFO - Преобразование данных для сохранения
+2025-04-16 06:56:14 - tgstats.collectors.channel_stats - INFO - Проверка существующих записей за 2025-04-16
+2025-04-16 06:56:14 - tgstats.collectors.channel_stats - INFO - Обновление существующей записи статистики
+2025-04-16 06:56:14 - tgstats.collectors.channel_stats - INFO - Сохранение изменений в базе данных
+2025-04-16 06:56:14 - tgstats.collectors.channel_stats - INFO - Статистика канала успешно сохранена
+2025-04-16 06:56:14 - tgstats.__main__ - INFO - Коллектор ChannelStatsCollector успешно завершил работу
+2025-04-16 06:56:14 - tgstats.__main__ - INFO - Запуск коллектора: ChannelPostsCollector
+2025-04-16 06:56:14 - tgstats.collectors.channel_posts - INFO - Начало сбора постов канала: PeerChannel(channel_id=2643969088)
+2025-04-16 06:56:14 - tgstats.collectors.channel_posts - INFO - Посты канала за последнюю неделю сохранены
+2025-04-16 06:56:14 - tgstats.__main__ - INFO - Коллектор ChannelPostsCollector успешно завершил работу
+2025-04-16 06:56:14 - tgstats.__main__ - INFO - Запуск коллектора: ChannelParticipantsCollector
+2025-04-16 06:56:14 - tgstats.collectors.channel_participants - INFO - Начало сбора участников канала: PeerChannel(channel_id=2643969088)
+2025-04-16 06:56:15 - tgstats.collectors.channel_participants - INFO - Участники канала сохранены
+2025-04-16 06:56:15 - tgstats.__main__ - INFO - Коллектор ChannelParticipantsCollector успешно завершил работу
+2025-04-16 06:56:15 - tgstats.__main__ - INFO - Запуск коллектора: ChannelActivityCollector
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Начинаю сбор статистики активности для канала Те самые фото что банит инстаграм (Reborn)
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Статистика активности для канала Те самые фото что банит инстаграм (Reborn) успешно сохранена
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Час 00:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Час 01:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Час 02:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Час 03:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Час 04:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Час 05:00 - 6 просмотров, 1 репостов, 2 реакций, 1 постов
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Час 06:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Час 07:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Час 08:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Час 09:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Час 10:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Час 11:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Час 12:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Час 13:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Час 14:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Час 15:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Час 16:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Час 17:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Час 18:00 - 0 просмотров, 0 репостов, 0 реакций, 1 постов
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Час 19:00 - 7 просмотров, 1 репостов, 4 реакций, 2 постов
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Час 20:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Час 21:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Час 22:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 06:56:15 - tgstats.tgstats.collectors.channel_activity - INFO - Час 23:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-16 06:56:15 - tgstats.__main__ - INFO - Коллектор ChannelActivityCollector успешно завершил работу
+2025-04-16 06:56:15 - tgstats.__main__ - INFO - Запуск коллектора: DiscussionStatsCollector
+2025-04-16 06:56:15 - tgstats.collectors.discussion_stats - INFO - Начало сбора статистики обсуждений канала: PeerChannel(channel_id=2643969088)
+2025-04-16 06:56:15 - tgstats.collectors.discussion_stats - INFO - Статистика обсуждений сохранена: 0 комментариев, 0 активных пользователей
+2025-04-16 06:56:15 - tgstats.__main__ - INFO - Коллектор DiscussionStatsCollector успешно завершил работу
+2025-04-16 06:56:15 - tgstats.__main__ - INFO - Отключение клиента Telegram
+2025-04-16 06:56:15 - tgstats.__main__ - INFO - Сбор статистики завершен
+2025-04-16 06:58:17 - tgstats.scheduler - INFO - Запуск планировщика задач

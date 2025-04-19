@@ -1,0 +1,753 @@
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Начало анализа данных
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Статистика канала Те самые фото что банят инстаграм (Reborn) на 2025-04-17 06:27:14.236615:
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Подписчиков: 67
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Всего постов: 6
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - 
+Активность по часам за последние 24 часа:
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Час 6: 0 просмотров
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Час 7: 0 просмотров
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Час 8: 107 просмотров
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Час 9: 0 просмотров
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Час 10: 0 просмотров
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Час 11: 0 просмотров
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Час 12: 0 просмотров
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Час 13: 0 просмотров
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Час 14: 0 просмотров
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Час 15: 0 просмотров
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Час 16: 0 просмотров
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Час 17: 0 просмотров
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Час 18: 0 просмотров
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Час 19: 0 просмотров
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Час 20: 0 просмотров
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Час 21: 0 просмотров
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Час 22: 0 просмотров
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Час 23: 0 просмотров
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Час 0: 0 просмотров
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Час 1: 0 просмотров
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Час 2: 0 просмотров
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Час 3: 0 просмотров
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Час 4: 0 просмотров
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Час 5: 136 просмотров
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - 
+Статистика обсуждений на 2025-04-17 06:27:15.442766:
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Всего комментариев: 0
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Активных пользователей: 0
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Анализ данных завершен
+2025-04-17 09:32:28 - tgstats.tgstats.database.schema - INFO - Начало обновления схемы базы данных
+2025-04-17 09:32:28 - tgstats.tgstats.database.schema - INFO - Проверка совместимости схемы базы данных
+2025-04-17 09:32:28 - tgstats.tgstats.database.schema - INFO - Схема базы данных актуальна
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Всего участников: 1256
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Участников с номером телефона: 66
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Участников с raw данными: 1256
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - Пример raw данных:
+2025-04-17 09:32:28 - tgstats.__main__ - INFO - {
+  "_": "User",
+  "id": 926341630,
+  "is_self": false,
+  "contact": false,
+  "mutual_contact": false,
+  "deleted": false,
+  "bot": false,
+  "bot_chat_history": false,
+  "bot_nochats": false,
+  "verified": false,
+  "restricted": false,
+  "min": false,
+  "bot_inline_geo": false,
+  "support": false,
+  "scam": false,
+  "apply_min_photo": true,
+  "fake": false,
+  "bot_attach_menu": false,
+  "premium": false,
+  "attach_menu_enabled": false,
+  "bot_can_edit": false,
+  "close_friend": false,
+  "stories_hidden": false,
+  "stories_unavailable": true,
+  "contact_require_premium": false,
+  "access_hash": 6731516947271680500,
+  "first_name": "F_ets",
+  "last_name": null,
+  "username": "Farzad_ets1",
+  "phone": null,
+  "photo": null,
+  "status": {
+    "_": "UserStatusOffline",
+    "was_online": "2025-04-16T11:23:03+00:00"
+  },
+  "bot_info_version": null,
+  "restriction_reason": [],
+  "bot_inline_placeholder": null,
+  "lang_code": null,
+  "emoji_status": null,
+  "usernames": [],
+  "stories_max_id": null,
+  "color": null,
+  "profile_color": null
+}
+2025-04-17 09:49:53 - tgstats.__main__ - INFO - Запуск сбора статистики канала
+2025-04-17 09:49:53 - tgstats.__main__ - INFO - Инициализация клиента Telegram
+2025-04-17 09:49:53 - tgstats.client - INFO - Найден локальный файл сессии: tg-post.session
+2025-04-17 09:49:53 - tgstats.client - INFO - Создание клиента Telegram с сессией: tg-post.session
+2025-04-17 09:49:54 - tgstats.__main__ - INFO - Инициализация базы данных
+2025-04-17 09:49:54 - tgstats.tgstats.database.schema - INFO - Начало обновления схемы базы данных
+2025-04-17 09:49:54 - tgstats.tgstats.database.schema - INFO - Проверка совместимости схемы базы данных
+2025-04-17 09:49:54 - tgstats.tgstats.database.schema - INFO - Схема базы данных актуальна
+2025-04-17 09:49:54 - tgstats.__main__ - INFO - Используется ID канала: 2643969088
+2025-04-17 09:49:54 - tgstats.__main__ - INFO - Запуск коллектора: ChannelStatsCollector
+2025-04-17 09:49:54 - tgstats.collectors.channel_stats - INFO - Начало сбора статистики канала: PeerChannel(channel_id=2643969088)
+2025-04-17 09:49:54 - tgstats.collectors.channel_stats - INFO - Получение информации о канале
+2025-04-17 09:49:54 - tgstats.collectors.channel_stats - INFO - Получена информация о канале: Те самые фото что банит инстаграм (Reborn) (ID: 2643969088)
+2025-04-17 09:49:54 - tgstats.collectors.channel_stats - INFO - Получение полной информации о канале
+2025-04-17 09:49:55 - tgstats.collectors.channel_stats - INFO - Получена полная информация о канале. Подписчиков: 67
+2025-04-17 09:49:55 - tgstats.collectors.channel_stats - INFO - Преобразование данных для сохранения
+2025-04-17 09:49:55 - tgstats.collectors.channel_stats - INFO - Проверка существующих записей за 2025-04-17
+2025-04-17 09:49:55 - tgstats.collectors.channel_stats - INFO - Обновление существующей записи статистики
+2025-04-17 09:49:55 - tgstats.collectors.channel_stats - INFO - Сохранение изменений в базе данных
+2025-04-17 09:49:55 - tgstats.collectors.channel_stats - INFO - Статистика канала успешно сохранена
+2025-04-17 09:49:55 - tgstats.__main__ - INFO - Коллектор ChannelStatsCollector успешно завершил работу
+2025-04-17 09:49:55 - tgstats.__main__ - INFO - Запуск коллектора: ChannelPostsCollector
+2025-04-17 09:49:55 - tgstats.collectors.channel_posts - INFO - Начало сбора постов канала: PeerChannel(channel_id=2643969088)
+2025-04-17 09:49:55 - tgstats.collectors.channel_posts - INFO - Посты канала за последнюю неделю сохранены
+2025-04-17 09:49:55 - tgstats.__main__ - INFO - Коллектор ChannelPostsCollector успешно завершил работу
+2025-04-17 09:49:55 - tgstats.__main__ - INFO - Запуск коллектора: ChannelParticipantsCollector
+2025-04-17 09:49:55 - tgstats.collectors.channel_participants - INFO - Начало сбора участников канала: PeerChannel(channel_id=2643969088)
+2025-04-17 09:49:56 - tgstats.collectors.channel_participants - INFO - Участники канала сохранены
+2025-04-17 09:49:56 - tgstats.__main__ - INFO - Коллектор ChannelParticipantsCollector успешно завершил работу
+2025-04-17 09:49:56 - tgstats.__main__ - INFO - Запуск коллектора: ChannelActivityCollector
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Начинаю сбор статистики активности для канала Те самые фото что банит инстаграм (Reborn)
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Статистика активности для канала Те самые фото что банит инстаграм (Reborn) успешно сохранена
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Час 00:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Час 01:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Час 02:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Час 03:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Час 04:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Час 05:00 - 144 просмотров, 2 репостов, 30 реакций, 2 постов
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Час 06:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Час 07:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Час 08:00 - 110 просмотров, 1 репостов, 16 реакций, 1 постов
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Час 09:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Час 10:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Час 11:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Час 12:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Час 13:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Час 14:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Час 15:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Час 16:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Час 17:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Час 18:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Час 19:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Час 20:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Час 21:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Час 22:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.channel_activity - INFO - Час 23:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:49:56 - tgstats.__main__ - INFO - Коллектор ChannelActivityCollector успешно завершил работу
+2025-04-17 09:49:56 - tgstats.__main__ - INFO - Запуск коллектора: DiscussionStatsCollector
+2025-04-17 09:49:56 - tgstats.tgstats.collectors.discussion_stats - INFO - Начало сбора статистики обсуждений канала: PeerChannel(channel_id=2643969088)
+2025-04-17 09:49:55 - tgstats.tgstats.collectors.discussion_stats - INFO - Статистика обсуждений сохранена: 0 комментариев, 0 активных пользователей
+2025-04-17 09:49:55 - tgstats.__main__ - INFO - Коллектор DiscussionStatsCollector успешно завершил работу
+2025-04-17 09:49:55 - tgstats.__main__ - INFO - Отключение клиента Telegram
+2025-04-17 09:49:55 - tgstats.__main__ - INFO - Сбор статистики завершен
+2025-04-17 09:50:48 - tgstats.__main__ - INFO - Запуск сбора статистики канала
+2025-04-17 09:50:48 - tgstats.__main__ - INFO - Инициализация клиента Telegram
+2025-04-17 09:50:48 - tgstats.client - INFO - Найден локальный файл сессии: tg-post.session
+2025-04-17 09:50:48 - tgstats.client - INFO - Создание клиента Telegram с сессией: tg-post.session
+2025-04-17 09:50:49 - tgstats.__main__ - INFO - Инициализация базы данных
+2025-04-17 09:50:49 - tgstats.tgstats.database.schema - INFO - Начало обновления схемы базы данных
+2025-04-17 09:50:49 - tgstats.tgstats.database.schema - INFO - Проверка совместимости схемы базы данных
+2025-04-17 09:50:49 - tgstats.tgstats.database.schema - INFO - Схема базы данных актуальна
+2025-04-17 09:50:49 - tgstats.__main__ - INFO - Используется ID канала: 2643969088
+2025-04-17 09:50:49 - tgstats.__main__ - INFO - Запуск коллектора: ChannelStatsCollector
+2025-04-17 09:50:49 - tgstats.collectors.channel_stats - INFO - Начало сбора статистики канала: PeerChannel(channel_id=2643969088)
+2025-04-17 09:50:49 - tgstats.collectors.channel_stats - INFO - Получение информации о канале
+2025-04-17 09:50:49 - tgstats.collectors.channel_stats - INFO - Получена информация о канале: Те самые фото что банит инстаграм (Reborn) (ID: 2643969088)
+2025-04-17 09:50:49 - tgstats.collectors.channel_stats - INFO - Получение полной информации о канале
+2025-04-17 09:50:49 - tgstats.collectors.channel_stats - INFO - Получена полная информация о канале. Подписчиков: 67
+2025-04-17 09:50:49 - tgstats.collectors.channel_stats - INFO - Преобразование данных для сохранения
+2025-04-17 09:50:49 - tgstats.collectors.channel_stats - INFO - Проверка существующих записей за 2025-04-17
+2025-04-17 09:50:49 - tgstats.collectors.channel_stats - INFO - Обновление существующей записи статистики
+2025-04-17 09:50:49 - tgstats.collectors.channel_stats - INFO - Сохранение изменений в базе данных
+2025-04-17 09:50:49 - tgstats.collectors.channel_stats - INFO - Статистика канала успешно сохранена
+2025-04-17 09:50:49 - tgstats.__main__ - INFO - Коллектор ChannelStatsCollector успешно завершил работу
+2025-04-17 09:50:49 - tgstats.__main__ - INFO - Запуск коллектора: ChannelPostsCollector
+2025-04-17 09:50:49 - tgstats.collectors.channel_posts - INFO - Начало сбора постов канала: PeerChannel(channel_id=2643969088)
+2025-04-17 09:50:49 - tgstats.collectors.channel_posts - INFO - Посты канала за последнюю неделю сохранены
+2025-04-17 09:50:49 - tgstats.__main__ - INFO - Коллектор ChannelPostsCollector успешно завершил работу
+2025-04-17 09:50:49 - tgstats.__main__ - INFO - Запуск коллектора: ChannelParticipantsCollector
+2025-04-17 09:50:49 - tgstats.collectors.channel_participants - INFO - Начало сбора участников канала: PeerChannel(channel_id=2643969088)
+2025-04-17 09:50:50 - tgstats.collectors.channel_participants - INFO - Участники канала сохранены
+2025-04-17 09:50:50 - tgstats.__main__ - INFO - Коллектор ChannelParticipantsCollector успешно завершил работу
+2025-04-17 09:50:50 - tgstats.__main__ - INFO - Запуск коллектора: ChannelActivityCollector
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Начинаю сбор статистики активности для канала Те самые фото что банит инстаграм (Reborn)
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Статистика активности для канала Те самые фото что банит инстаграм (Reborn) успешно сохранена
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Час 00:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Час 01:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Час 02:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Час 03:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Час 04:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Час 05:00 - 144 просмотров, 2 репостов, 30 реакций, 2 постов
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Час 06:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Час 07:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Час 08:00 - 110 просмотров, 1 репостов, 16 реакций, 1 постов
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Час 09:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Час 10:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Час 11:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Час 12:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Час 13:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Час 14:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Час 15:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Час 16:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Час 17:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Час 18:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Час 19:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Час 20:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Час 21:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Час 22:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.channel_activity - INFO - Час 23:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:50:50 - tgstats.__main__ - INFO - Коллектор ChannelActivityCollector успешно завершил работу
+2025-04-17 09:50:50 - tgstats.__main__ - INFO - Запуск коллектора: DiscussionStatsCollector
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.discussion_stats - INFO - Начало сбора статистики обсуждений канала: PeerChannel(channel_id=2643969088)
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.discussion_stats - INFO - Найдено 3 постов за последние 24 часа
+2025-04-17 09:50:50 - tgstats.tgstats.collectors.discussion_stats - INFO - Статистика обсуждений сохранена: 0 комментариев, 0 активных пользователей
+2025-04-17 09:50:50 - tgstats.__main__ - INFO - Коллектор DiscussionStatsCollector успешно завершил работу
+2025-04-17 09:50:50 - tgstats.__main__ - INFO - Отключение клиента Telegram
+2025-04-17 09:50:51 - tgstats.__main__ - INFO - Сбор статистики завершен
+2025-04-17 09:59:42 - tgstats.__main__ - INFO - Запуск сбора статистики канала
+2025-04-17 09:59:42 - tgstats.__main__ - INFO - Инициализация клиента Telegram
+2025-04-17 09:59:42 - tgstats.client - INFO - Найден локальный файл сессии: tg-post.session
+2025-04-17 09:59:42 - tgstats.client - INFO - Создание клиента Telegram с сессией: tg-post.session
+2025-04-17 09:59:43 - tgstats.__main__ - INFO - Инициализация базы данных
+2025-04-17 09:59:43 - tgstats.tgstats.database.schema - INFO - Начало обновления схемы базы данных
+2025-04-17 09:59:43 - tgstats.tgstats.database.schema - INFO - Проверка совместимости схемы базы данных
+2025-04-17 09:59:43 - tgstats.tgstats.database.schema - INFO - Схема базы данных актуальна
+2025-04-17 09:59:43 - tgstats.__main__ - INFO - Используется ID канала: 2643969088
+2025-04-17 09:59:43 - tgstats.__main__ - INFO - Запуск коллектора: ChannelStatsCollector
+2025-04-17 09:59:43 - tgstats.collectors.channel_stats - INFO - Начало сбора статистики канала: PeerChannel(channel_id=2643969088)
+2025-04-17 09:59:43 - tgstats.collectors.channel_stats - INFO - Получение информации о канале
+2025-04-17 09:59:43 - tgstats.collectors.channel_stats - INFO - Получена информация о канале: Те самые фото что банит инстаграм (Reborn) (ID: 2643969088)
+2025-04-17 09:59:43 - tgstats.collectors.channel_stats - INFO - Получение полной информации о канале
+2025-04-17 09:59:44 - tgstats.collectors.channel_stats - INFO - Получена полная информация о канале. Подписчиков: 67
+2025-04-17 09:59:44 - tgstats.collectors.channel_stats - INFO - Преобразование данных для сохранения
+2025-04-17 09:59:44 - tgstats.collectors.channel_stats - INFO - Проверка существующих записей за 2025-04-17
+2025-04-17 09:59:44 - tgstats.collectors.channel_stats - INFO - Обновление существующей записи статистики
+2025-04-17 09:59:44 - tgstats.collectors.channel_stats - INFO - Сохранение изменений в базе данных
+2025-04-17 09:59:44 - tgstats.collectors.channel_stats - INFO - Статистика канала успешно сохранена
+2025-04-17 09:59:44 - tgstats.__main__ - INFO - Коллектор ChannelStatsCollector успешно завершил работу
+2025-04-17 09:59:44 - tgstats.__main__ - INFO - Запуск коллектора: ChannelPostsCollector
+2025-04-17 09:59:44 - tgstats.collectors.channel_posts - INFO - Начало сбора постов канала: PeerChannel(channel_id=2643969088)
+2025-04-17 09:59:45 - tgstats.collectors.channel_posts - INFO - Посты канала за последнюю неделю сохранены
+2025-04-17 09:59:45 - tgstats.__main__ - INFO - Коллектор ChannelPostsCollector успешно завершил работу
+2025-04-17 09:59:45 - tgstats.__main__ - INFO - Запуск коллектора: ChannelParticipantsCollector
+2025-04-17 09:59:45 - tgstats.collectors.channel_participants - INFO - Начало сбора участников канала: PeerChannel(channel_id=2643969088)
+2025-04-17 09:59:44 - tgstats.collectors.channel_participants - INFO - Участники канала сохранены
+2025-04-17 09:59:44 - tgstats.__main__ - INFO - Коллектор ChannelParticipantsCollector успешно завершил работу
+2025-04-17 09:59:44 - tgstats.__main__ - INFO - Запуск коллектора: ChannelActivityCollector
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Начинаю сбор статистики активности для канала Те самые фото что банит инстаграм (Reborn)
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Статистика активности для канала Те самые фото что банит инстаграм (Reborn) успешно сохранена
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Час 00:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Час 01:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Час 02:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Час 03:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Час 04:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Час 05:00 - 146 просмотров, 2 репостов, 30 реакций, 2 постов
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Час 06:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Час 07:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Час 08:00 - 110 просмотров, 1 репостов, 16 реакций, 1 постов
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Час 09:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Час 10:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Час 11:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Час 12:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Час 13:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Час 14:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Час 15:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Час 16:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Час 17:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Час 18:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Час 19:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Час 20:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Час 21:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Час 22:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.channel_activity - INFO - Час 23:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 09:59:44 - tgstats.__main__ - INFO - Коллектор ChannelActivityCollector успешно завершил работу
+2025-04-17 09:59:44 - tgstats.__main__ - INFO - Запуск коллектора: DiscussionStatsCollector
+2025-04-17 09:59:44 - tgstats.tgstats.collectors.discussion_stats - INFO - Начало сбора статистики обсуждений канала: PeerChannel(channel_id=2643969088)
+2025-04-17 09:59:45 - tgstats.tgstats.collectors.discussion_stats - INFO - Найдено 3 постов за последние 24 часа
+2025-04-17 09:59:45 - tgstats.tgstats.collectors.discussion_stats - INFO - Статистика обсуждений сохранена: 0 комментариев, 0 активных пользователей
+2025-04-17 09:59:45 - tgstats.__main__ - INFO - Коллектор DiscussionStatsCollector успешно завершил работу
+2025-04-17 09:59:45 - tgstats.__main__ - INFO - Отключение клиента Telegram
+2025-04-17 09:59:45 - tgstats.__main__ - INFO - Сбор статистики завершен
+2025-04-17 10:00:35 - tgstats.__main__ - INFO - Запуск сбора статистики канала
+2025-04-17 10:00:35 - tgstats.__main__ - INFO - Инициализация клиента Telegram
+2025-04-17 10:00:35 - tgstats.client - INFO - Найден локальный файл сессии: tg-post.session
+2025-04-17 10:00:35 - tgstats.client - INFO - Создание клиента Telegram с сессией: tg-post.session
+2025-04-17 10:00:35 - tgstats.__main__ - INFO - Инициализация базы данных
+2025-04-17 10:00:35 - tgstats.tgstats.database.schema - INFO - Начало обновления схемы базы данных
+2025-04-17 10:00:35 - tgstats.tgstats.database.schema - INFO - Проверка совместимости схемы базы данных
+2025-04-17 10:00:35 - tgstats.tgstats.database.schema - INFO - Схема базы данных актуальна
+2025-04-17 10:00:35 - tgstats.__main__ - INFO - Используется ID канала: 2643969088
+2025-04-17 10:00:35 - tgstats.__main__ - INFO - Запуск коллектора: ChannelStatsCollector
+2025-04-17 10:00:35 - tgstats.collectors.channel_stats - INFO - Начало сбора статистики канала: PeerChannel(channel_id=2643969088)
+2025-04-17 10:00:35 - tgstats.collectors.channel_stats - INFO - Получение информации о канале
+2025-04-17 10:00:35 - tgstats.collectors.channel_stats - INFO - Получена информация о канале: Те самые фото что банит инстаграм (Reborn) (ID: 2643969088)
+2025-04-17 10:00:35 - tgstats.collectors.channel_stats - INFO - Получение полной информации о канале
+2025-04-17 10:00:36 - tgstats.collectors.channel_stats - INFO - Получена полная информация о канале. Подписчиков: 67
+2025-04-17 10:00:36 - tgstats.collectors.channel_stats - INFO - Преобразование данных для сохранения
+2025-04-17 10:00:36 - tgstats.collectors.channel_stats - INFO - Проверка существующих записей за 2025-04-17
+2025-04-17 10:00:36 - tgstats.collectors.channel_stats - INFO - Обновление существующей записи статистики
+2025-04-17 10:00:36 - tgstats.collectors.channel_stats - INFO - Сохранение изменений в базе данных
+2025-04-17 10:00:36 - tgstats.collectors.channel_stats - INFO - Статистика канала успешно сохранена
+2025-04-17 10:00:36 - tgstats.__main__ - INFO - Коллектор ChannelStatsCollector успешно завершил работу
+2025-04-17 10:00:36 - tgstats.__main__ - INFO - Запуск коллектора: ChannelPostsCollector
+2025-04-17 10:00:36 - tgstats.collectors.channel_posts - INFO - Начало сбора постов канала: PeerChannel(channel_id=2643969088)
+2025-04-17 10:00:36 - tgstats.collectors.channel_posts - INFO - Посты канала за последнюю неделю сохранены
+2025-04-17 10:00:36 - tgstats.__main__ - INFO - Коллектор ChannelPostsCollector успешно завершил работу
+2025-04-17 10:00:36 - tgstats.__main__ - INFO - Запуск коллектора: ChannelParticipantsCollector
+2025-04-17 10:00:36 - tgstats.collectors.channel_participants - INFO - Начало сбора участников канала: PeerChannel(channel_id=2643969088)
+2025-04-17 10:00:37 - tgstats.collectors.channel_participants - INFO - Участники канала сохранены
+2025-04-17 10:00:37 - tgstats.__main__ - INFO - Коллектор ChannelParticipantsCollector успешно завершил работу
+2025-04-17 10:00:37 - tgstats.__main__ - INFO - Запуск коллектора: ChannelActivityCollector
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Начинаю сбор статистики активности для канала Те самые фото что банит инстаграм (Reborn)
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Статистика активности для канала Те самые фото что банит инстаграм (Reborn) успешно сохранена
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Час 00:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Час 01:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Час 02:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Час 03:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Час 04:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Час 05:00 - 146 просмотров, 2 репостов, 30 реакций, 2 постов
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Час 06:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Час 07:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Час 08:00 - 110 просмотров, 1 репостов, 16 реакций, 1 постов
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Час 09:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Час 10:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Час 11:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Час 12:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Час 13:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Час 14:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Час 15:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Час 16:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Час 17:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Час 18:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Час 19:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Час 20:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Час 21:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Час 22:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.channel_activity - INFO - Час 23:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:00:37 - tgstats.__main__ - INFO - Коллектор ChannelActivityCollector успешно завершил работу
+2025-04-17 10:00:37 - tgstats.__main__ - INFO - Запуск коллектора: DiscussionStatsCollector
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.discussion_stats - INFO - Начало сбора статистики обсуждений канала: PeerChannel(channel_id=2643969088)
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.discussion_stats - INFO - Найдено 3 постов за последние 24 часа
+2025-04-17 10:00:37 - tgstats.tgstats.collectors.discussion_stats - INFO - Статистика обсуждений сохранена: 0 комментариев, 0 активных пользователей
+2025-04-17 10:00:37 - tgstats.__main__ - INFO - Коллектор DiscussionStatsCollector успешно завершил работу
+2025-04-17 10:00:37 - tgstats.__main__ - INFO - Отключение клиента Telegram
+2025-04-17 10:00:37 - tgstats.__main__ - INFO - Сбор статистики завершен
+2025-04-17 10:01:44 - tgstats.__main__ - INFO - Запуск сбора статистики канала
+2025-04-17 10:01:44 - tgstats.__main__ - INFO - Инициализация клиента Telegram
+2025-04-17 10:01:44 - tgstats.client - INFO - Найден локальный файл сессии: tg-post.session
+2025-04-17 10:01:44 - tgstats.client - INFO - Создание клиента Telegram с сессией: tg-post.session
+2025-04-17 10:01:45 - tgstats.__main__ - INFO - Инициализация базы данных
+2025-04-17 10:01:45 - tgstats.tgstats.database.schema - INFO - Начало обновления схемы базы данных
+2025-04-17 10:01:45 - tgstats.tgstats.database.schema - INFO - Проверка совместимости схемы базы данных
+2025-04-17 10:01:45 - tgstats.tgstats.database.schema - INFO - Схема базы данных актуальна
+2025-04-17 10:01:45 - tgstats.__main__ - INFO - Используется ID канала: 2643969088
+2025-04-17 10:01:45 - tgstats.__main__ - INFO - Запуск коллектора: ChannelStatsCollector
+2025-04-17 10:01:45 - tgstats.collectors.channel_stats - INFO - Начало сбора статистики канала: PeerChannel(channel_id=2643969088)
+2025-04-17 10:01:45 - tgstats.collectors.channel_stats - INFO - Получение информации о канале
+2025-04-17 10:01:45 - tgstats.collectors.channel_stats - INFO - Получена информация о канале: Те самые фото что банит инстаграм (Reborn) (ID: 2643969088)
+2025-04-17 10:01:45 - tgstats.collectors.channel_stats - INFO - Получение полной информации о канале
+2025-04-17 10:01:45 - tgstats.collectors.channel_stats - INFO - Получена полная информация о канале. Подписчиков: 67
+2025-04-17 10:01:45 - tgstats.collectors.channel_stats - INFO - Преобразование данных для сохранения
+2025-04-17 10:01:45 - tgstats.collectors.channel_stats - INFO - Проверка существующих записей за 2025-04-17
+2025-04-17 10:01:45 - tgstats.collectors.channel_stats - INFO - Обновление существующей записи статистики
+2025-04-17 10:01:45 - tgstats.collectors.channel_stats - INFO - Сохранение изменений в базе данных
+2025-04-17 10:01:45 - tgstats.collectors.channel_stats - INFO - Статистика канала успешно сохранена
+2025-04-17 10:01:45 - tgstats.__main__ - INFO - Коллектор ChannelStatsCollector успешно завершил работу
+2025-04-17 10:01:45 - tgstats.__main__ - INFO - Запуск коллектора: ChannelPostsCollector
+2025-04-17 10:01:45 - tgstats.collectors.channel_posts - INFO - Начало сбора постов канала: PeerChannel(channel_id=2643969088)
+2025-04-17 10:01:46 - tgstats.collectors.channel_posts - INFO - Посты канала за последнюю неделю сохранены
+2025-04-17 10:01:46 - tgstats.__main__ - INFO - Коллектор ChannelPostsCollector успешно завершил работу
+2025-04-17 10:01:46 - tgstats.__main__ - INFO - Запуск коллектора: ChannelParticipantsCollector
+2025-04-17 10:01:46 - tgstats.collectors.channel_participants - INFO - Начало сбора участников канала: PeerChannel(channel_id=2643969088)
+2025-04-17 10:01:46 - tgstats.collectors.channel_participants - INFO - Участники канала сохранены
+2025-04-17 10:01:46 - tgstats.__main__ - INFO - Коллектор ChannelParticipantsCollector успешно завершил работу
+2025-04-17 10:01:46 - tgstats.__main__ - INFO - Запуск коллектора: ChannelActivityCollector
+2025-04-17 10:01:46 - tgstats.tgstats.collectors.channel_activity - INFO - Начинаю сбор статистики активности для канала Те самые фото что банит инстаграм (Reborn)
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.channel_activity - INFO - Статистика активности для канала Те самые фото что банит инстаграм (Reborn) успешно сохранена
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 00:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 01:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 02:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 03:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 04:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 05:00 - 146 просмотров, 2 репостов, 30 реакций, 2 постов
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 06:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 07:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 08:00 - 110 просмотров, 1 репостов, 16 реакций, 1 постов
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 09:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 10:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 11:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 12:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 13:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 14:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 15:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 16:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 17:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 18:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 19:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 20:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 21:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 22:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 23:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:01:47 - tgstats.__main__ - INFO - Коллектор ChannelActivityCollector успешно завершил работу
+2025-04-17 10:01:47 - tgstats.__main__ - INFO - Запуск коллектора: DiscussionStatsCollector
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.discussion_stats - INFO - Начало сбора статистики обсуждений канала: PeerChannel(channel_id=2643969088)
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.discussion_stats - INFO - Найдено 3 постов за последние 24 часа
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.discussion_stats - INFO - Статистика обсуждений сохранена: 1 комментариев, 0 активных пользователей
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.discussion_stats - INFO - 
+Детальная информация о комментариях:
+2025-04-17 10:01:47 - tgstats.tgstats.collectors.discussion_stats - INFO - Пост 11: 1 комментариев
+2025-04-17 10:01:47 - tgstats.__main__ - INFO - Коллектор DiscussionStatsCollector успешно завершил работу
+2025-04-17 10:01:47 - tgstats.__main__ - INFO - Отключение клиента Telegram
+2025-04-17 10:01:47 - tgstats.__main__ - INFO - Сбор статистики завершен
+2025-04-17 10:21:44 - tgstats.__main__ - INFO - Запуск сбора статистики канала
+2025-04-17 10:21:44 - tgstats.__main__ - INFO - Инициализация клиента Telegram
+2025-04-17 10:21:44 - tgstats.client - INFO - Найден локальный файл сессии: tg-post.session
+2025-04-17 10:21:44 - tgstats.client - INFO - Создание клиента Telegram с сессией: tg-post.session
+2025-04-17 10:21:45 - tgstats.__main__ - INFO - Инициализация базы данных
+2025-04-17 10:21:45 - tgstats.tgstats.database.schema - INFO - Начало обновления схемы базы данных
+2025-04-17 10:21:45 - tgstats.tgstats.database.schema - INFO - Проверка совместимости схемы базы данных
+2025-04-17 10:21:45 - tgstats.tgstats.database.schema - INFO - Схема базы данных актуальна
+2025-04-17 10:21:45 - tgstats.__main__ - INFO - Используется ID канала: 2643969088
+2025-04-17 10:21:45 - tgstats.__main__ - INFO - Запуск коллектора: ChannelStatsCollector
+2025-04-17 10:21:45 - tgstats.collectors.channel_stats - INFO - Начало сбора статистики канала: PeerChannel(channel_id=2643969088)
+2025-04-17 10:21:45 - tgstats.collectors.channel_stats - INFO - Получение информации о канале
+2025-04-17 10:21:45 - tgstats.collectors.channel_stats - INFO - Получена информация о канале: Те самые фото что банит инстаграм (Reborn) (ID: 2643969088)
+2025-04-17 10:21:45 - tgstats.collectors.channel_stats - INFO - Получение полной информации о канале
+2025-04-17 10:21:45 - tgstats.collectors.channel_stats - INFO - Получена полная информация о канале. Подписчиков: 69
+2025-04-17 10:21:45 - tgstats.collectors.channel_stats - INFO - Преобразование данных для сохранения
+2025-04-17 10:21:45 - tgstats.collectors.channel_stats - INFO - Проверка существующих записей за 2025-04-17
+2025-04-17 10:21:45 - tgstats.collectors.channel_stats - INFO - Обновление существующей записи статистики
+2025-04-17 10:21:45 - tgstats.collectors.channel_stats - INFO - Сохранение изменений в базе данных
+2025-04-17 10:21:45 - tgstats.collectors.channel_stats - INFO - Статистика канала успешно сохранена
+2025-04-17 10:21:45 - tgstats.__main__ - INFO - Коллектор ChannelStatsCollector успешно завершил работу
+2025-04-17 10:21:45 - tgstats.__main__ - INFO - Запуск коллектора: ChannelPostsCollector
+2025-04-17 10:21:45 - tgstats.collectors.channel_posts - INFO - Начало сбора постов канала: PeerChannel(channel_id=2643969088)
+2025-04-17 10:21:46 - tgstats.collectors.channel_posts - INFO - Посты канала за последнюю неделю сохранены
+2025-04-17 10:21:46 - tgstats.__main__ - INFO - Коллектор ChannelPostsCollector успешно завершил работу
+2025-04-17 10:21:46 - tgstats.__main__ - INFO - Запуск коллектора: ChannelParticipantsCollector
+2025-04-17 10:21:46 - tgstats.collectors.channel_participants - INFO - Начало сбора участников канала: PeerChannel(channel_id=2643969088)
+2025-04-17 10:21:46 - tgstats.collectors.channel_participants - INFO - Участники канала сохранены
+2025-04-17 10:21:46 - tgstats.__main__ - INFO - Коллектор ChannelParticipantsCollector успешно завершил работу
+2025-04-17 10:21:46 - tgstats.__main__ - INFO - Запуск коллектора: ChannelActivityCollector
+2025-04-17 10:21:46 - tgstats.tgstats.collectors.channel_activity - INFO - Начинаю сбор статистики активности для канала Те самые фото что банит инстаграм (Reborn)
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.channel_activity - INFO - Статистика активности для канала Те самые фото что банит инстаграм (Reborn) успешно сохранена
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 00:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 01:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 02:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 03:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 04:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 05:00 - 157 просмотров, 2 репостов, 30 реакций, 2 постов
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 06:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 07:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 08:00 - 113 просмотров, 1 репостов, 16 реакций, 1 постов
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 09:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 10:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 11:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 12:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 13:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 14:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 15:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 16:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 17:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 18:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 19:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 20:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 21:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 22:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.channel_activity - INFO - Час 23:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:21:47 - tgstats.__main__ - INFO - Коллектор ChannelActivityCollector успешно завершил работу
+2025-04-17 10:21:47 - tgstats.__main__ - INFO - Запуск коллектора: DiscussionStatsCollector
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.discussion_stats - INFO - Начало сбора статистики обсуждений канала: PeerChannel(channel_id=2643969088)
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.discussion_stats - INFO - Найдено 6 постов в базе
+2025-04-17 10:21:47 - tgstats.tgstats.collectors.discussion_stats - WARNING - Ошибка при получении комментариев для поста 1: The message ID used in the peer was invalid (caused by GetRepliesRequest)
+2025-04-17 10:21:48 - tgstats.tgstats.collectors.discussion_stats - WARNING - Ошибка при получении комментариев для поста 2: The message ID used in the peer was invalid (caused by GetRepliesRequest)
+2025-04-17 10:21:48 - tgstats.tgstats.collectors.discussion_stats - INFO - Статистика обсуждений сохранена: 2 комментариев, 0 активных пользователей
+2025-04-17 10:21:48 - tgstats.tgstats.collectors.discussion_stats - INFO - 
+Детальная информация о комментариях:
+2025-04-17 10:21:48 - tgstats.tgstats.collectors.discussion_stats - INFO - Пост 3: 1 комментариев
+2025-04-17 10:21:48 - tgstats.tgstats.collectors.discussion_stats - INFO - Пост 11: 1 комментариев
+2025-04-17 10:21:48 - tgstats.__main__ - INFO - Коллектор DiscussionStatsCollector успешно завершил работу
+2025-04-17 10:21:48 - tgstats.__main__ - INFO - Отключение клиента Telegram
+2025-04-17 10:21:48 - tgstats.__main__ - INFO - Сбор статистики завершен
+2025-04-17 10:29:49 - tgstats.__main__ - INFO - Запуск сбора статистики канала
+2025-04-17 10:29:49 - tgstats.__main__ - INFO - Инициализация клиента Telegram
+2025-04-17 10:29:49 - tgstats.client - INFO - Найден локальный файл сессии: tg-post.session
+2025-04-17 10:29:49 - tgstats.client - INFO - Создание клиента Telegram с сессией: tg-post.session
+2025-04-17 10:29:50 - tgstats.__main__ - INFO - Инициализация базы данных
+2025-04-17 10:29:50 - tgstats.tgstats.database.schema - INFO - Начало обновления схемы базы данных
+2025-04-17 10:29:50 - tgstats.tgstats.database.schema - INFO - Проверка совместимости схемы базы данных
+2025-04-17 10:29:50 - tgstats.tgstats.database.schema - INFO - Схема базы данных актуальна
+2025-04-17 10:29:50 - tgstats.__main__ - INFO - Используется ID канала: 2643969088
+2025-04-17 10:29:50 - tgstats.__main__ - INFO - Запуск коллектора: ChannelStatsCollector
+2025-04-17 10:29:50 - tgstats.collectors.channel_stats - INFO - Начало сбора статистики канала: PeerChannel(channel_id=2643969088)
+2025-04-17 10:29:50 - tgstats.collectors.channel_stats - INFO - Получение информации о канале
+2025-04-17 10:29:50 - tgstats.collectors.channel_stats - INFO - Получена информация о канале: Те самые фото что банит инстаграм (Reborn) (ID: 2643969088)
+2025-04-17 10:29:50 - tgstats.collectors.channel_stats - INFO - Получение полной информации о канале
+2025-04-17 10:29:50 - tgstats.collectors.channel_stats - INFO - Получена полная информация о канале. Подписчиков: 69
+2025-04-17 10:29:50 - tgstats.collectors.channel_stats - INFO - Преобразование данных для сохранения
+2025-04-17 10:29:50 - tgstats.collectors.channel_stats - INFO - Проверка существующих записей за 2025-04-17
+2025-04-17 10:29:50 - tgstats.collectors.channel_stats - INFO - Обновление существующей записи статистики
+2025-04-17 10:29:50 - tgstats.collectors.channel_stats - INFO - Сохранение изменений в базе данных
+2025-04-17 10:29:50 - tgstats.collectors.channel_stats - INFO - Статистика канала успешно сохранена
+2025-04-17 10:29:50 - tgstats.__main__ - INFO - Коллектор ChannelStatsCollector успешно завершил работу
+2025-04-17 10:29:50 - tgstats.__main__ - INFO - Запуск коллектора: ChannelPostsCollector
+2025-04-17 10:29:50 - tgstats.collectors.channel_posts - INFO - Начало сбора постов канала: PeerChannel(channel_id=2643969088)
+2025-04-17 10:29:51 - tgstats.collectors.channel_posts - INFO - Посты канала за последнюю неделю сохранены
+2025-04-17 10:29:51 - tgstats.__main__ - INFO - Коллектор ChannelPostsCollector успешно завершил работу
+2025-04-17 10:29:51 - tgstats.__main__ - INFO - Запуск коллектора: ChannelParticipantsCollector
+2025-04-17 10:29:51 - tgstats.collectors.channel_participants - INFO - Начало сбора участников канала: PeerChannel(channel_id=2643969088)
+2025-04-17 10:29:51 - tgstats.collectors.channel_participants - INFO - Участники канала сохранены
+2025-04-17 10:29:51 - tgstats.__main__ - INFO - Коллектор ChannelParticipantsCollector успешно завершил работу
+2025-04-17 10:29:51 - tgstats.__main__ - INFO - Запуск коллектора: ChannelActivityCollector
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Начинаю сбор статистики активности для канала Те самые фото что банит инстаграм (Reborn)
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Статистика активности для канала Те самые фото что банит инстаграм (Reborn) успешно сохранена
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 00:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 01:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 02:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 03:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 04:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 05:00 - 157 просмотров, 2 репостов, 30 реакций, 2 постов
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 06:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 07:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 08:00 - 113 просмотров, 1 репостов, 16 реакций, 1 постов
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 09:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 10:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 11:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 12:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 13:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 14:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 15:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 16:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 17:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 18:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 19:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 20:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 21:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 22:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.channel_activity - INFO - Час 23:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:29:51 - tgstats.__main__ - INFO - Коллектор ChannelActivityCollector успешно завершил работу
+2025-04-17 10:29:51 - tgstats.__main__ - INFO - Запуск коллектора: DiscussionStatsCollector
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.discussion_stats - INFO - Начало сбора статистики обсуждений канала: PeerChannel(channel_id=2643969088)
+2025-04-17 10:29:51 - tgstats.tgstats.collectors.discussion_stats - INFO - Найдено 6 постов в базе
+2025-04-17 10:29:52 - tgstats.tgstats.collectors.discussion_stats - WARNING - Ошибка при получении комментариев для поста 1: The message ID used in the peer was invalid (caused by GetRepliesRequest)
+2025-04-17 10:29:52 - tgstats.tgstats.collectors.discussion_stats - WARNING - Ошибка при получении комментариев для поста 2: The message ID used in the peer was invalid (caused by GetRepliesRequest)
+2025-04-17 10:29:52 - tgstats.tgstats.collectors.discussion_stats - INFO - Статистика обсуждений сохранена: 9 комментариев, 4 активных пользователей
+2025-04-17 10:29:52 - tgstats.tgstats.collectors.discussion_stats - INFO - 
+Детальная информация о комментариях:
+2025-04-17 10:29:52 - tgstats.tgstats.collectors.discussion_stats - INFO - Пост 3: 4 комментариев
+2025-04-17 10:29:52 - tgstats.tgstats.collectors.discussion_stats - INFO - Пост 11: 5 комментариев
+2025-04-17 10:29:52 - tgstats.tgstats.collectors.discussion_stats - INFO - 
+Топ комментаторов:
+2025-04-17 10:29:52 - tgstats.tgstats.collectors.discussion_stats - INFO - 1. Пользователь 7266414596: 2 комментариев
+2025-04-17 10:29:52 - tgstats.tgstats.collectors.discussion_stats - INFO - 2. Пользователь 128762513: 1 комментариев
+2025-04-17 10:29:52 - tgstats.tgstats.collectors.discussion_stats - INFO - 3. Пользователь 323832965: 1 комментариев
+2025-04-17 10:29:52 - tgstats.tgstats.collectors.discussion_stats - INFO - 4. Пользователь 462088135: 1 комментариев
+2025-04-17 10:29:52 - tgstats.__main__ - INFO - Коллектор DiscussionStatsCollector успешно завершил работу
+2025-04-17 10:29:52 - tgstats.__main__ - INFO - Отключение клиента Telegram
+2025-04-17 10:29:52 - tgstats.__main__ - INFO - Сбор статистики завершен
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Начало анализа данных
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Статистика канала Те самые фото что банят инстаграм (Reborn) на 2025-04-17 06:27:14.236615:
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Подписчиков: 69
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Всего постов: 6
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - 
+Активность по часам за последние 24 часа:
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Час 0: 0 просмотров
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Час 1: 0 просмотров
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Час 2: 0 просмотров
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Час 3: 0 просмотров
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Час 4: 0 просмотров
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Час 5: 157 просмотров
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Час 6: 0 просмотров
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Час 7: 0 просмотров
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Час 8: 113 просмотров
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Час 9: 0 просмотров
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Час 10: 0 просмотров
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Час 11: 0 просмотров
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Час 12: 0 просмотров
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Час 13: 0 просмотров
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Час 14: 0 просмотров
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Час 15: 0 просмотров
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Час 16: 0 просмотров
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Час 17: 0 просмотров
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Час 18: 0 просмотров
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Час 19: 0 просмотров
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Час 20: 0 просмотров
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Час 21: 0 просмотров
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Час 22: 0 просмотров
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Час 23: 0 просмотров
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - 
+Статистика обсуждений на 2025-04-17 06:27:15.442766:
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Всего комментариев: 9
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - Активных пользователей: 4
+2025-04-17 10:30:28 - tgstats.__main__ - INFO - 
+Топ комментаторов:
+2025-04-17 10:31:46 - tgstats.__main__ - INFO - Запуск анализа
+2025-04-17 10:31:46 - tgstats.__main__ - INFO - Запуск анализа данных
+2025-04-17 10:31:46 - tgstats.__main__ - INFO - Анализ роста подписчиков за последние 30 дней
+2025-04-17 10:31:46 - tgstats.tgstats.database.schema - INFO - Начало обновления схемы базы данных
+2025-04-17 10:31:46 - tgstats.tgstats.database.schema - INFO - Проверка совместимости схемы базы данных
+2025-04-17 10:31:47 - tgstats.tgstats.database.schema - INFO - Схема базы данных актуальна
+2025-04-17 10:31:47 - tgstats.__main__ - INFO - Запрос данных с 2025-03-18 07:31:47.004704 по 2025-04-17 07:31:47.004704
+2025-04-17 10:31:47 - tgstats.__main__ - INFO - Найдено 3 записей о подписчиках
+2025-04-17 10:31:47 - tgstats.__main__ - INFO - Анализ активности канала за последние 7 дней
+2025-04-17 10:31:47 - tgstats.__main__ - INFO - Запрос данных с 2025-04-10 07:31:47.020910 по 2025-04-17 07:31:47.020910
+2025-04-17 10:31:47 - tgstats.__main__ - INFO - Найдено 1 записей об активности
+2025-04-17 10:31:47 - tgstats.__main__ - INFO - Анализ обсуждений канала за последние 7 дней
+2025-04-17 10:31:47 - tgstats.__main__ - INFO - Запрос данных с 2025-04-10 07:31:47.025995 по 2025-04-17 07:31:47.025995
+2025-04-17 10:31:47 - tgstats.__main__ - INFO - Найдено 3 записей об обсуждениях
+2025-04-17 10:31:47 - tgstats.__main__ - INFO - Анализ топ пользователей
+2025-04-17 10:31:47 - tgstats.__main__ - INFO - Найдено 1258 участников
+2025-04-17 10:31:47 - tgstats.__main__ - ERROR - Ошибка при анализе данных: 'ChannelParticipant' object has no attribute 'status'
+2025-04-17 10:31:47 - tgstats.__main__ - INFO - Анализ участников канала
+2025-04-17 10:31:47 - tgstats.__main__ - INFO - Найдено 1258 участников
+2025-04-17 10:31:47 - tgstats.__main__ - INFO - Анализ завершен
+2025-04-17 10:31:59 - tgstats.__main__ - INFO - Запуск сбора статистики канала
+2025-04-17 10:31:59 - tgstats.__main__ - INFO - Инициализация клиента Telegram
+2025-04-17 10:31:59 - tgstats.client - INFO - Найден локальный файл сессии: tg-post.session
+2025-04-17 10:31:59 - tgstats.client - INFO - Создание клиента Telegram с сессией: tg-post.session
+2025-04-17 10:31:59 - tgstats.__main__ - INFO - Инициализация базы данных
+2025-04-17 10:31:59 - tgstats.tgstats.database.schema - INFO - Начало обновления схемы базы данных
+2025-04-17 10:31:59 - tgstats.tgstats.database.schema - INFO - Проверка совместимости схемы базы данных
+2025-04-17 10:32:00 - tgstats.tgstats.database.schema - INFO - Схема базы данных актуальна
+2025-04-17 10:32:00 - tgstats.__main__ - INFO - Используется ID канала: 2643969088
+2025-04-17 10:32:00 - tgstats.__main__ - INFO - Запуск коллектора: ChannelStatsCollector
+2025-04-17 10:32:00 - tgstats.collectors.channel_stats - INFO - Начало сбора статистики канала: PeerChannel(channel_id=2643969088)
+2025-04-17 10:32:00 - tgstats.collectors.channel_stats - INFO - Получение информации о канале
+2025-04-17 10:32:00 - tgstats.collectors.channel_stats - INFO - Получена информация о канале: Те самые фото что банит инстаграм (Reborn) (ID: 2643969088)
+2025-04-17 10:32:00 - tgstats.collectors.channel_stats - INFO - Получение полной информации о канале
+2025-04-17 10:32:00 - tgstats.collectors.channel_stats - INFO - Получена полная информация о канале. Подписчиков: 69
+2025-04-17 10:32:00 - tgstats.collectors.channel_stats - INFO - Преобразование данных для сохранения
+2025-04-17 10:32:00 - tgstats.collectors.channel_stats - INFO - Проверка существующих записей за 2025-04-17
+2025-04-17 10:32:00 - tgstats.collectors.channel_stats - INFO - Обновление существующей записи статистики
+2025-04-17 10:32:00 - tgstats.collectors.channel_stats - INFO - Сохранение изменений в базе данных
+2025-04-17 10:32:00 - tgstats.collectors.channel_stats - INFO - Статистика канала успешно сохранена
+2025-04-17 10:32:00 - tgstats.__main__ - INFO - Коллектор ChannelStatsCollector успешно завершил работу
+2025-04-17 10:32:00 - tgstats.__main__ - INFO - Запуск коллектора: ChannelPostsCollector
+2025-04-17 10:32:00 - tgstats.collectors.channel_posts - INFO - Начало сбора постов канала: PeerChannel(channel_id=2643969088)
+2025-04-17 10:32:00 - tgstats.collectors.channel_posts - INFO - Посты канала за последнюю неделю сохранены
+2025-04-17 10:32:00 - tgstats.__main__ - INFO - Коллектор ChannelPostsCollector успешно завершил работу
+2025-04-17 10:32:00 - tgstats.__main__ - INFO - Запуск коллектора: ChannelParticipantsCollector
+2025-04-17 10:32:00 - tgstats.collectors.channel_participants - INFO - Начало сбора участников канала: PeerChannel(channel_id=2643969088)
+2025-04-17 10:32:01 - tgstats.collectors.channel_participants - INFO - Участники канала сохранены
+2025-04-17 10:32:01 - tgstats.__main__ - INFO - Коллектор ChannelParticipantsCollector успешно завершил работу
+2025-04-17 10:32:01 - tgstats.__main__ - INFO - Запуск коллектора: ChannelActivityCollector
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Начинаю сбор статистики активности для канала Те самые фото что банит инстаграм (Reborn)
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Статистика активности для канала Те самые фото что банит инстаграм (Reborn) успешно сохранена
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Час 00:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Час 01:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Час 02:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Час 03:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Час 04:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Час 05:00 - 157 просмотров, 2 репостов, 30 реакций, 2 постов
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Час 06:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Час 07:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Час 08:00 - 113 просмотров, 1 репостов, 16 реакций, 1 постов
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Час 09:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Час 10:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Час 11:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Час 12:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Час 13:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Час 14:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Час 15:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Час 16:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Час 17:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Час 18:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Час 19:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Час 20:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Час 21:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Час 22:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.channel_activity - INFO - Час 23:00 - 0 просмотров, 0 репостов, 0 реакций, 0 постов
+2025-04-17 10:32:01 - tgstats.__main__ - INFO - Коллектор ChannelActivityCollector успешно завершил работу
+2025-04-17 10:32:01 - tgstats.__main__ - INFO - Запуск коллектора: DiscussionStatsCollector
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.discussion_stats - INFO - Начало сбора статистики обсуждений канала: PeerChannel(channel_id=2643969088)
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.discussion_stats - INFO - Найдено 6 постов в базе
+2025-04-17 10:32:01 - tgstats.tgstats.collectors.discussion_stats - WARNING - Ошибка при получении комментариев для поста 1: The message ID used in the peer was invalid (caused by GetRepliesRequest)
+2025-04-17 10:32:02 - tgstats.tgstats.collectors.discussion_stats - WARNING - Ошибка при получении комментариев для поста 2: The message ID used in the peer was invalid (caused by GetRepliesRequest)
+2025-04-17 10:32:02 - tgstats.tgstats.collectors.discussion_stats - INFO - Статистика обсуждений сохранена: 9 комментариев, 4 активных пользователей
+2025-04-17 10:32:02 - tgstats.tgstats.collectors.discussion_stats - INFO - 
+Детальная информация о комментариях:
+2025-04-17 10:32:02 - tgstats.tgstats.collectors.discussion_stats - INFO - Пост 3: 4 комментариев
+2025-04-17 10:32:02 - tgstats.tgstats.collectors.discussion_stats - INFO - Пост 11: 5 комментариев
+2025-04-17 10:32:02 - tgstats.tgstats.collectors.discussion_stats - INFO - 
+Топ комментаторов:
+2025-04-17 10:32:02 - tgstats.tgstats.collectors.discussion_stats - INFO - 1. Пользователь 7266414596: 2 комментариев
+2025-04-17 10:32:02 - tgstats.tgstats.collectors.discussion_stats - INFO - 2. Пользователь 128762513: 1 комментариев
+2025-04-17 10:32:02 - tgstats.tgstats.collectors.discussion_stats - INFO - 3. Пользователь 323832965: 1 комментариев
+2025-04-17 10:32:02 - tgstats.tgstats.collectors.discussion_stats - INFO - 4. Пользователь 462088135: 1 комментариев
+2025-04-17 10:32:02 - tgstats.__main__ - INFO - Коллектор DiscussionStatsCollector успешно завершил работу
+2025-04-17 10:32:02 - tgstats.__main__ - INFO - Отключение клиента Telegram
+2025-04-17 10:32:02 - tgstats.__main__ - INFO - Сбор статистики завершен
+2025-04-17 10:32:42 - tgstats.__main__ - INFO - Запуск анализа
+2025-04-17 10:32:42 - tgstats.__main__ - INFO - Запуск анализа данных
+2025-04-17 10:32:42 - tgstats.__main__ - INFO - Анализ роста подписчиков за последние 30 дней
+2025-04-17 10:32:42 - tgstats.tgstats.database.schema - INFO - Начало обновления схемы базы данных
+2025-04-17 10:32:42 - tgstats.tgstats.database.schema - INFO - Проверка совместимости схемы базы данных
+2025-04-17 10:32:43 - tgstats.tgstats.database.schema - INFO - Схема базы данных актуальна
+2025-04-17 10:32:43 - tgstats.__main__ - INFO - Запрос данных с 2025-03-18 07:32:43.097635 по 2025-04-17 07:32:43.097635
+2025-04-17 10:32:43 - tgstats.__main__ - INFO - Найдено 3 записей о подписчиках
+2025-04-17 10:32:43 - tgstats.__main__ - INFO - Анализ активности канала за последние 7 дней
+2025-04-17 10:32:43 - tgstats.__main__ - INFO - Запрос данных с 2025-04-10 07:32:43.114031 по 2025-04-17 07:32:43.114031
+2025-04-17 10:32:43 - tgstats.__main__ - INFO - Найдено 1 записей об активности
+2025-04-17 10:32:43 - tgstats.__main__ - INFO - Анализ обсуждений канала за последние 7 дней
+2025-04-17 10:32:43 - tgstats.__main__ - INFO - Запрос данных с 2025-04-10 07:32:43.118058 по 2025-04-17 07:32:43.118058
+2025-04-17 10:32:43 - tgstats.__main__ - INFO - Найдено 3 записей об обсуждениях
+2025-04-17 10:32:43 - tgstats.__main__ - INFO - Анализ топ пользователей
+2025-04-17 10:32:43 - tgstats.__main__ - INFO - Найдено 1258 участников
+2025-04-17 10:32:43 - tgstats.__main__ - INFO - Анализ почасовой активности
+2025-04-17 10:32:43 - tgstats.__main__ - ERROR - Ошибка при анализе данных: 'int' object has no attribute 'get'
+2025-04-17 10:32:43 - tgstats.__main__ - INFO - Анализ участников канала
+2025-04-17 10:32:43 - tgstats.__main__ - INFO - Найдено 1258 участников
+2025-04-17 10:32:43 - tgstats.__main__ - INFO - Анализ завершен
+2025-04-17 10:43:19 - tgstats.__main__ - INFO - Запуск анализа
+2025-04-17 10:43:19 - tgstats.__main__ - INFO - Запуск анализа данных для канала 2643969088
+2025-04-17 10:43:19 - tgstats.__main__ - INFO - Анализ роста подписчиков за последние 30 дней для канала 2643969088
+2025-04-17 10:43:19 - tgstats.tgstats.database.schema - INFO - Начало обновления схемы базы данных
+2025-04-17 10:43:19 - tgstats.tgstats.database.schema - INFO - Проверка совместимости схемы базы данных
+2025-04-17 10:43:19 - tgstats.tgstats.database.schema - INFO - Схема базы данных актуальна
+2025-04-17 10:43:19 - tgstats.__main__ - INFO - Запрос данных с 2025-03-18 07:43:19.953968 по 2025-04-17 07:43:19.953968
+2025-04-17 10:43:19 - tgstats.__main__ - INFO - Найдено 2 записей о подписчиках
+2025-04-17 10:43:19 - tgstats.__main__ - INFO - Анализ активности канала 2643969088 за последние 7 дней
+2025-04-17 10:43:19 - tgstats.__main__ - INFO - Запрос данных с 2025-04-10 07:43:19.971312 по 2025-04-17 07:43:19.971312
+2025-04-17 10:43:19 - tgstats.__main__ - INFO - Найдено 1 записей об активности
+2025-04-17 10:43:19 - tgstats.__main__ - INFO - Анализ обсуждений канала 2643969088 за последние 7 дней
+2025-04-17 10:43:19 - tgstats.__main__ - INFO - Запрос данных с 2025-04-10 07:43:19.978606 по 2025-04-17 07:43:19.978606
+2025-04-17 10:43:19 - tgstats.__main__ - INFO - Найдено 2 записей об обсуждениях
+2025-04-17 10:43:19 - tgstats.__main__ - INFO - Анализ топ пользователей канала 2643969088
+2025-04-17 10:43:19 - tgstats.__main__ - INFO - Найдено 69 участников
+2025-04-17 10:43:19 - tgstats.__main__ - INFO - Анализ почасовой активности канала 2643969088
+2025-04-17 10:43:19 - tgstats.__main__ - INFO - Анализ ежедневных трендов канала 2643969088
+2025-04-17 10:43:19 - tgstats.__main__ - ERROR - Ошибка при анализе данных: 'ChannelStats' object has no attribute 'views'
+2025-04-17 10:43:20 - tgstats.__main__ - INFO - Анализ участников канала 2643969088
+2025-04-17 10:43:20 - tgstats.__main__ - INFO - Найдено 69 участников
+2025-04-17 10:43:20 - tgstats.__main__ - INFO - Анализ завершен
+2025-04-17 10:43:59 - tgstats.__main__ - INFO - Запуск анализа
+2025-04-17 10:43:59 - tgstats.__main__ - INFO - Запуск анализа данных для канала 2643969088
+2025-04-17 10:43:59 - tgstats.__main__ - INFO - Анализ роста подписчиков за последние 30 дней для канала 2643969088
+2025-04-17 10:43:59 - tgstats.tgstats.database.schema - INFO - Начало обновления схемы базы данных
+2025-04-17 10:43:59 - tgstats.tgstats.database.schema - INFO - Проверка совместимости схемы базы данных
+2025-04-17 10:44:00 - tgstats.tgstats.database.schema - INFO - Схема базы данных актуальна
+2025-04-17 10:44:00 - tgstats.__main__ - INFO - Запрос данных с 2025-03-18 07:44:00.010707 по 2025-04-17 07:44:00.010707
+2025-04-17 10:44:00 - tgstats.__main__ - INFO - Найдено 2 записей о подписчиках
+2025-04-17 10:44:00 - tgstats.__main__ - INFO - Анализ активности канала 2643969088 за последние 7 дней
+2025-04-17 10:44:00 - tgstats.__main__ - INFO - Запрос данных с 2025-04-10 07:44:00.024081 по 2025-04-17 07:44:00.024081
+2025-04-17 10:44:00 - tgstats.__main__ - INFO - Найдено 1 записей об активности
+2025-04-17 10:44:00 - tgstats.__main__ - INFO - Анализ обсуждений канала 2643969088 за последние 7 дней
+2025-04-17 10:44:00 - tgstats.__main__ - INFO - Запрос данных с 2025-04-10 07:44:00.028042 по 2025-04-17 07:44:00.028042
+2025-04-17 10:44:00 - tgstats.__main__ - INFO - Найдено 2 записей об обсуждениях
+2025-04-17 10:44:00 - tgstats.__main__ - INFO - Анализ топ пользователей канала 2643969088
+2025-04-17 10:44:00 - tgstats.__main__ - INFO - Найдено 69 участников
+2025-04-17 10:44:00 - tgstats.__main__ - INFO - Анализ почасовой активности канала 2643969088
+2025-04-17 10:44:00 - tgstats.__main__ - INFO - Анализ ежедневных трендов канала 2643969088
+2025-04-17 10:44:00 - tgstats.__main__ - INFO - Анализ данных завершен успешно
+2025-04-17 10:44:00 - tgstats.__main__ - INFO - Анализ участников канала 2643969088
+2025-04-17 10:44:00 - tgstats.__main__ - INFO - Найдено 69 участников
+2025-04-17 10:44:00 - tgstats.__main__ - INFO - Анализ завершен

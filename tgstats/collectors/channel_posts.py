@@ -1,46 +1,41 @@
+from datetime import datetime, timedelta
 from telethon.tl.functions.messages import GetHistoryRequest
 from .base import BaseCollector
 from tgstats.database.models import ChannelPost, PostReaction
 from tgstats.utils import convert_to_json_serializable
 from sqlalchemy import and_
+from tgstats.logger import get_logger
+
+logger = get_logger('collectors.channel_posts')
 
 class ChannelPostsCollector(BaseCollector):
     async def run(self, channel):
+        logger.info(f"Начало сбора постов канала: {channel}")
+        
+        # Получаем все сообщения канала
         chat = await self.client.get_entity(channel)
+        posts = await self.client.get_messages(chat, limit=None)
         
-        # Получаем все сообщения из канала
-        messages = []
-        offset_id = 0
-        limit = 10000
-        total_messages = 0
-        total_limit = 100000  # Ограничиваем количество сообщений
+        # Собираем статистику
+        now = datetime.utcnow().replace(tzinfo=None)  # Убираем информацию о часовом поясе
+        week_ago = now - timedelta(days=7)
         
-        while True:
-            history = await self.client(GetHistoryRequest(
-                peer=chat,
-                offset_id=offset_id,
-                offset_date=None,
-                add_offset=0,
-                limit=limit,
-                max_id=0,
-                min_id=0,
-                hash=0
-            ))
-            
-            if not history.messages:
-                break
+        # Словарь для хранения ID постов в базе данных
+        post_ids = {}
+        
+        # Обрабатываем каждый пост
+        for message in posts:
+            if not message.date:
+                continue
                 
-            messages.extend(history.messages)
-            total_messages += len(history.messages)
+            # Убираем информацию о часовом поясе для сравнения
+            message_date = message.date.replace(tzinfo=None)
             
-            if total_messages >= total_limit:
-                break
+            # Считаем только посты за последнюю неделю
+            if message_date < week_ago:
+                continue
                 
-            offset_id = messages[-1].id
-        
-        # Сохраняем сообщения и реакции
-        for message in messages:
-            # Проверяем, существует ли уже пост
+            # Проверяем, есть ли уже такой пост в базе
             existing_post = self.db.query(ChannelPost).filter(
                 and_(
                     ChannelPost.channel_id == chat.id,
@@ -50,29 +45,41 @@ class ChannelPostsCollector(BaseCollector):
             
             if existing_post:
                 # Обновляем существующий пост
-                existing_post.text = message.text
                 existing_post.views = message.views
                 existing_post.forwards = message.forwards
-                existing_post.replies = message.replies.replies if message.replies else None
+                existing_post.text = message.text
+                existing_post.date = message_date
+                existing_post.media_type = message.media.__class__.__name__ if message.media else None
+                existing_post.replies = message.replies.replies if message.replies else 0
                 existing_post.raw = convert_to_json_serializable(message)
+                post_ids[message.id] = existing_post.id
             else:
                 # Создаем новый пост
                 post = ChannelPost(
                     channel_id=chat.id,
                     message_id=message.id,
-                    date=message.date,
-                    text=message.text,
                     views=message.views,
                     forwards=message.forwards,
-                    replies=message.replies.replies if message.replies else None,
+                    text=message.text,
+                    date=message_date,
                     media_type=message.media.__class__.__name__ if message.media else None,
+                    replies=message.replies.replies if message.replies else 0,
                     raw=convert_to_json_serializable(message)
                 )
                 self.db.add(post)
-                self.db.flush()  # Получаем ID поста для реакций
-            
-            # Обрабатываем реакции
+                self.db.flush()  # Получаем ID нового поста
+                post_ids[message.id] = post.id
+        
+        self.db.commit()
+        logger.info(f"Посты канала за последнюю неделю сохранены")
+
+        # Сохраняем реакции
+        for message in posts:
             if message.reactions and message.reactions.results:
+                # Пропускаем реакции для постов, которых нет в базе
+                if message.id not in post_ids:
+                    continue
+                    
                 for reaction_count in message.reactions.results:
                     if reaction_count.reaction:
                         # Получаем тип реакции
@@ -82,7 +89,7 @@ class ChannelPostsCollector(BaseCollector):
                         # Проверяем, существует ли уже реакция
                         existing_reaction = self.db.query(PostReaction).filter(
                             and_(
-                                PostReaction.post_id == (existing_post.id if existing_post else post.id),
+                                PostReaction.post_id == post_ids[message.id],
                                 PostReaction.reaction == reaction_type
                             )
                         ).first()
@@ -93,10 +100,10 @@ class ChannelPostsCollector(BaseCollector):
                         else:
                             # Создаем новую реакцию
                             new_reaction = PostReaction(
-                                post_id=existing_post.id if existing_post else post.id,
+                                post_id=post_ids[message.id],
                                 reaction=reaction_type,
                                 count=reaction_count.count,
-                                date=message.date
+                                date=message.date.replace(tzinfo=None)  # Убираем информацию о часовом поясе
                             )
                             self.db.add(new_reaction)
         

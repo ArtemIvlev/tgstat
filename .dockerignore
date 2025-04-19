@@ -1,13 +1,9 @@
-# Environment variables
-.env
-
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
-env/
 build/
 develop-eggs/
 dist/
@@ -24,27 +20,33 @@ wheels/
 .installed.cfg
 *.egg
 
-# Database
-*.sqlite
-*.db
-*.sqlite3
-
-# Telegram session files
-*.session
-*.session-journal
-
-# Backs
-backups/
-
-# Virtual environment
+# Virtual Environment
 venv/
 ENV/
+env/
 
 # IDE
 .idea/
 .vscode/
-*.swp
-*.swo
+
+# Logs
+logs/
+*.log
+
+# Local development
+.env
+.env.local
+.env.*
+
+# Git
+.git/
+.gitignore
 
 # Docker
-data/ 
+.docker/
+
+# Other
+*.csv
+*.json
+*.db
+*.sqlite3 

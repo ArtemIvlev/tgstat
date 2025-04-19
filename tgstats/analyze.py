@@ -1,19 +1,33 @@
 from datetime import datetime, timedelta
-from sqlalchemy import desc
-from tgstats.database.database import Database
-from tgstats.database.models import ChannelStats, ChannelActivity, DiscussionStats, ChannelParticipant
-from tgstats.config.config import CHANNEL_TITLE
+from sqlalchemy import desc, func, create_engine, text
+from sqlalchemy.orm import sessionmaker
+from tgstats.database import get_db
+from tgstats.database.models import ChannelStats, ChannelPost, ChannelParticipant, ChannelActivity, DiscussionStats, HourlyActivity, Base
+from tgstats.config.config import CHANNEL_IDS
 from tgstats.logger import get_logger
+from tgstats.config import PG_CONNECTION_PARAMS
+import json
 
 # Создаем логгер для этого модуля
-logger = get_logger('analyze')
+logger = get_logger(__name__)
 
-def analyze_subscribers_growth(days=30):
+def get_channel_title(channel_id):
+    """Получает название канала из базы данных"""
+    db = get_db()
+    stats = db.query(ChannelStats).filter(
+        ChannelStats.channel_id == channel_id
+    ).order_by(desc(ChannelStats.date)).first()
+    
+    return stats.title if stats else f"Канал {channel_id}"
+
+def analyze_subscribers_growth(channel_id=None, days=30):
     """
     Анализирует рост подписчиков за указанный период
     """
-    logger.info(f"Анализ роста подписчиков за последние {days} дней")
-    db = Database()
+    channel_id = channel_id or CHANNEL_IDS[0]
+    channel_title = get_channel_title(channel_id)
+    logger.info(f"Анализ роста подписчиков за последние {days} дней для канала {channel_id}")
+    db = get_db()
     
     # Получаем статистику за последние N дней
     end_date = datetime.utcnow()
@@ -21,7 +35,8 @@ def analyze_subscribers_growth(days=30):
     
     logger.info(f"Запрос данных с {start_date} по {end_date}")
     stats = db.query(ChannelStats).filter(
-        ChannelStats.date >= start_date
+        ChannelStats.date >= start_date,
+        ChannelStats.channel_id == channel_id
     ).order_by(ChannelStats.date).all()
     
     if not stats:
@@ -30,7 +45,7 @@ def analyze_subscribers_growth(days=30):
         return
     
     logger.info(f"Найдено {len(stats)} записей о подписчиках")
-    print(f"\nСтатистика роста подписчиков канала '{CHANNEL_TITLE}'")
+    print(f"\nСтатистика роста подписчиков канала '{channel_title}'")
     print("=" * 50)
     
     prev_subscribers = None
@@ -50,12 +65,14 @@ def analyze_subscribers_growth(days=30):
         print(f"{date_str}: {stat.subscribers}{growth}")
         prev_subscribers = stat.subscribers
 
-def analyze_channel_activity(days=7):
+def analyze_channel_activity(channel_id=None, days=7):
     """
     Анализирует активность канала за указанный период
     """
-    logger.info(f"Анализ активности канала за последние {days} дней")
-    db = Database()
+    channel_id = channel_id or CHANNEL_IDS[0]
+    channel_title = get_channel_title(channel_id)
+    logger.info(f"Анализ активности канала {channel_id} за последние {days} дней")
+    db = get_db()
     
     # Получаем статистику за последние N дней
     end_date = datetime.utcnow()
@@ -63,7 +80,8 @@ def analyze_channel_activity(days=7):
     
     logger.info(f"Запрос данных с {start_date} по {end_date}")
     stats = db.query(ChannelActivity).filter(
-        ChannelActivity.date >= start_date
+        ChannelActivity.date >= start_date,
+        ChannelActivity.channel_id == channel_id
     ).order_by(ChannelActivity.date).all()
     
     if not stats:
@@ -72,7 +90,7 @@ def analyze_channel_activity(days=7):
         return
     
     logger.info(f"Найдено {len(stats)} записей об активности")
-    print(f"\nСтатистика активности канала '{CHANNEL_TITLE}'")
+    print(f"\nСтатистика активности канала '{channel_title}'")
     print("=" * 50)
     
     for stat in stats:
@@ -89,12 +107,14 @@ def analyze_channel_activity(days=7):
             for hour, views in sorted(stat.active_hours.items()):
                 print(f"{hour}:00 - {views} просмотров")
 
-def analyze_discussions(days=7):
+def analyze_discussions(channel_id=None, days=7):
     """
     Анализирует обсуждения канала за указанный период
     """
-    logger.info(f"Анализ обсуждений канала за последние {days} дней")
-    db = Database()
+    channel_id = channel_id or CHANNEL_IDS[0]
+    channel_title = get_channel_title(channel_id)
+    logger.info(f"Анализ обсуждений канала {channel_id} за последние {days} дней")
+    db = get_db()
     
     # Получаем статистику за последние N дней
     end_date = datetime.utcnow()
@@ -102,7 +122,8 @@ def analyze_discussions(days=7):
     
     logger.info(f"Запрос данных с {start_date} по {end_date}")
     stats = db.query(DiscussionStats).filter(
-        DiscussionStats.date >= start_date
+        DiscussionStats.date >= start_date,
+        DiscussionStats.channel_id == channel_id
     ).order_by(DiscussionStats.date).all()
     
     if not stats:
@@ -111,7 +132,7 @@ def analyze_discussions(days=7):
         return
     
     logger.info(f"Найдено {len(stats)} записей об обсуждениях")
-    print(f"\nСтатистика обсуждений канала '{CHANNEL_TITLE}'")
+    print(f"\nСтатистика обсуждений канала '{channel_title}'")
     print("=" * 50)
     
     for stat in stats:
@@ -120,102 +141,227 @@ def analyze_discussions(days=7):
         print(f"Всего комментариев: {stat.total_comments}")
         print(f"Активных пользователей: {stat.active_users}")
         
-        # Показываем топ комментаторов
+        if stat.comments_per_post:
+            print("\nКомментарии по постам:")
+            for post_id, comments in stat.comments_per_post.items():
+                print(f"Пост {post_id}: {comments} комментариев")
+        
         if stat.top_commenters:
             print("\nТоп комментаторов:")
             for i, commenter in enumerate(stat.top_commenters, 1):
                 print(f"{i}. Пользователь {commenter['user_id']}: {commenter['comments']} комментариев")
-        
-        # Показываем распределение комментариев по постам
-        if stat.comments_per_post:
-            print("\nРаспределение комментариев по постам:")
-            for post_id, comments in stat.comments_per_post.items():
-                print(f"Пост {post_id}: {comments} комментариев")
 
-def analyze_top_users():
+def analyze_top_users(channel_id=None):
     """
-    Анализирует и показывает наиболее активных пользователей канала
+    Анализирует топ пользователей по активности
     """
-    logger.info("Анализ наиболее активных пользователей канала")
-    db = Database()
+    channel_id = channel_id or CHANNEL_IDS[0]
+    channel_title = get_channel_title(channel_id)
+    logger.info(f"Анализ топ пользователей канала {channel_id}")
+    db = get_db()
     
-    # Получаем все записи о комментариях
-    logger.info("Запрос всех записей о комментариях")
-    stats = db.query(DiscussionStats).all()
-    
-    # Собираем статистику по пользователям
-    user_stats = {}
-    
-    for stat in stats:
-        if stat.top_commenters:
-            for commenter in stat.top_commenters:
-                user_id = commenter['user_id']
-                comments = commenter['comments']
-                
-                if user_id not in user_stats:
-                    user_stats[user_id] = {
-                        'total_comments': 0,
-                        'days_active': 0
-                    }
-                
-                user_stats[user_id]['total_comments'] += comments
-                user_stats[user_id]['days_active'] += 1
-    
-    if not user_stats:
-        logger.warning("Нет данных об активности пользователей")
-        print("\nНет данных об активности пользователей")
-        return
-    
-    logger.info(f"Найдено {len(user_stats)} активных пользователей")
-    
-    # Получаем информацию о пользователях
-    user_ids = list(user_stats.keys())
-    logger.info(f"Запрос информации о {len(user_ids)} пользователях")
-    users = db.query(ChannelParticipant).filter(
-        ChannelParticipant.user_id.in_(user_ids)
+    # Получаем всех участников
+    participants = db.query(ChannelParticipant).filter(
+        ChannelParticipant.channel_id == channel_id
     ).all()
     
-    # Добавляем информацию о пользователях в статистику
-    for user in users:
-        if user.user_id in user_stats:
-            user_stats[user.user_id]['username'] = user.username
-            user_stats[user.user_id]['first_name'] = user.first_name
-            user_stats[user.user_id]['last_name'] = user.last_name
+    if not participants:
+        logger.warning("Нет данных об участниках")
+        print("Нет данных об участниках")
+        return
     
-    # Сортируем пользователей по количеству комментариев
-    sorted_users = sorted(
-        user_stats.items(),
-        key=lambda x: x[1]['total_comments'],
-        reverse=True
-    )
-    
-    logger.info(f"Топ активных пользователей: {len(sorted_users)}")
-    print("\nТоп активных пользователей:")
+    logger.info(f"Найдено {len(participants)} участников")
+    print(f"\nТоп пользователей канала '{channel_title}'")
     print("=" * 50)
     
-    for user_id, stats in sorted_users[:10]:  # Показываем топ-10
+    # Группируем по наличию username и phone
+    stats = {
+        'с username': 0,
+        'с телефоном': 0,
+        'с именем': 0,
+        'с фамилией': 0,
+        'удалённые': 0,
+        'боты': 0,
+        'верифицированные': 0
+    }
+    
+    for participant in participants:
+        raw = participant.raw
+        if raw:
+            raw_data = json.loads(raw) if isinstance(raw, str) else raw
+            if raw_data.get('username'):
+                stats['с username'] += 1
+            if raw_data.get('phone'):
+                stats['с телефоном'] += 1
+            if raw_data.get('first_name'):
+                stats['с именем'] += 1
+            if raw_data.get('last_name'):
+                stats['с фамилией'] += 1
+            if raw_data.get('deleted'):
+                stats['удалённые'] += 1
+            if raw_data.get('bot'):
+                stats['боты'] += 1
+            if raw_data.get('verified'):
+                stats['верифицированные'] += 1
+    
+    # Выводим статистику
+    print("\nСтатистика пользователей:")
+    for category, count in sorted(stats.items(), key=lambda x: x[1], reverse=True):
+        if count > 0:
+            print(f"{category}: {count} ({count/len(participants)*100:.1f}%)")
+            
+    # Выводим топ-10 пользователей с username
+    print("\nТоп-10 пользователей с username:")
+    top_users = [p for p in participants if p.username][:10]
+    for i, user in enumerate(top_users, 1):
         name_parts = []
-        if stats.get('first_name'):
-            name_parts.append(stats['first_name'])
-        if stats.get('last_name'):
-            name_parts.append(stats['last_name'])
-        name = ' '.join(name_parts) if name_parts else 'Неизвестно'
+        if user.first_name:
+            name_parts.append(user.first_name)
+        if user.last_name:
+            name_parts.append(user.last_name)
+        name = ' '.join(name_parts) if name_parts else 'Без имени'
+        print(f"{i}. @{user.username} ({name})")
+
+def analyze_hourly_activity(channel_id=None):
+    """
+    Анализирует почасовую активность
+    """
+    channel_id = channel_id or CHANNEL_IDS[0]
+    channel_title = get_channel_title(channel_id)
+    logger.info(f"Анализ почасовой активности канала {channel_id}")
+    db = get_db()
+    
+    # Получаем последнюю запись активности
+    activity = db.query(ChannelActivity).filter(
+        ChannelActivity.channel_id == channel_id
+    ).order_by(desc(ChannelActivity.date)).first()
+    
+    if not activity:
+        logger.warning("Нет данных о почасовой активности")
+        print("Нет данных о почасовой активности")
+        return
+    
+    print(f"\nПочасовая активность канала '{channel_title}'")
+    print("=" * 50)
+    print(f"Дата: {activity.date.strftime('%Y-%m-%d')}")
+    
+    # Выводим статистику по часам
+    if activity.active_hours:
+        for hour in range(24):
+            hour_str = f"{hour:02d}:00"
+            views = activity.active_hours.get(str(hour), 0)
+            
+            if views > 0:
+                print(f"\n{hour_str}:")
+                print(f"Просмотров: {views}")
+                
+                # Если есть данные о репостах и реакциях, выводим их
+                if hasattr(activity, 'forwards_by_hour') and activity.forwards_by_hour:
+                    forwards = activity.forwards_by_hour.get(str(hour), 0)
+                    print(f"Репостов: {forwards}")
+                    
+                if hasattr(activity, 'reactions_by_hour') and activity.reactions_by_hour:
+                    reactions = activity.reactions_by_hour.get(str(hour), 0)
+                    print(f"Реакций: {reactions}")
+                    
+                if hasattr(activity, 'posts_by_hour') and activity.posts_by_hour:
+                    posts = activity.posts_by_hour.get(str(hour), 0)
+                    print(f"Постов: {posts}")
+    else:
+        print("\nНет данных о просмотрах по часам")
+
+def analyze_daily_trends(channel_id=None):
+    """
+    Анализирует ежедневные тренды
+    """
+    channel_id = channel_id or CHANNEL_IDS[0]
+    channel_title = get_channel_title(channel_id)
+    logger.info(f"Анализ ежедневных трендов канала {channel_id}")
+    db = get_db()
+    
+    # Получаем статистику за последние 7 дней
+    end_date = datetime.utcnow()
+    start_date = end_date - timedelta(days=7)
+    
+    # Получаем статистику подписчиков
+    stats = db.query(ChannelStats).filter(
+        ChannelStats.date >= start_date,
+        ChannelStats.channel_id == channel_id
+    ).order_by(ChannelStats.date).all()
+    
+    # Получаем статистику активности
+    activity = db.query(ChannelActivity).filter(
+        ChannelActivity.date >= start_date,
+        ChannelActivity.channel_id == channel_id
+    ).order_by(ChannelActivity.date).all()
+    
+    if not stats and not activity:
+        logger.warning("Нет данных о трендах")
+        print("Нет данных о трендах")
+        return
+    
+    print(f"\nЕжедневные тренды канала '{channel_title}'")
+    print("=" * 50)
+    
+    # Создаем словарь для объединения данных по датам
+    daily_stats = {}
+    
+    # Добавляем данные о подписчиках
+    for stat in stats:
+        date_str = stat.date.strftime("%Y-%m-%d")
+        if date_str not in daily_stats:
+            daily_stats[date_str] = {'date': stat.date}
+        daily_stats[date_str]['subscribers'] = stat.subscribers
+    
+    # Добавляем данные об активности
+    for act in activity:
+        date_str = act.date.strftime("%Y-%m-%d")
+        if date_str not in daily_stats:
+            daily_stats[date_str] = {'date': act.date}
+        daily_stats[date_str]['views'] = act.total_views
+        daily_stats[date_str]['forwards'] = act.total_forwards
+        daily_stats[date_str]['reactions'] = act.total_reactions
+        daily_stats[date_str]['posts'] = act.posts_count
+    
+    # Выводим статистику по дням
+    for date_str, data in sorted(daily_stats.items()):
+        print(f"\n{date_str}:")
+        if 'subscribers' in data:
+            print(f"Подписчиков: {data['subscribers']}")
+        if 'views' in data:
+            print(f"Просмотров: {data['views']}")
+        if 'forwards' in data:
+            print(f"Репостов: {data['forwards']}")
+        if 'reactions' in data:
+            print(f"Реакций: {data['reactions']}")
+        if 'posts' in data:
+            print(f"Постов: {data['posts']}")
+
+def analyze_data(channel_ids=None):
+    """Запускает все виды анализа для каждого канала"""
+    
+    # Если каналы не указаны, берем из конфигурации
+    if not channel_ids:
+        channel_ids = CHANNEL_IDS
+    
+    logger.info(f"Запуск анализа данных для каналов: {channel_ids}")
+    
+    for channel_id in channel_ids:
+        channel_title = get_channel_title(channel_id)
+        logger.info(f"Анализ данных для канала {channel_id} ({channel_title})")
+        print(f"\n{'='*20} Канал {channel_title} {'='*20}")
         
-        username = f"@{stats['username']}" if stats.get('username') else 'нет юзернейма'
-        
-        print(f"\nПользователь: {name} ({username})")
-        print(f"ID: {user_id}")
-        print(f"Всего комментариев: {stats['total_comments']}")
-        print(f"Дней активности: {stats['days_active']}")
-        print(f"В среднем комментариев в день: {stats['total_comments'] / stats['days_active']:.1f}")
+        # Запускаем все виды анализа
+        analyze_subscribers_growth(channel_id)
+        analyze_channel_activity(channel_id)
+        analyze_discussions(channel_id)
+        analyze_top_users(channel_id)
+        analyze_hourly_activity(channel_id)
+        analyze_daily_trends(channel_id)
+
+def main():
+    """Основная функция для запуска анализа"""
+    analyze_data()
 
 if __name__ == "__main__":
-    logger.info("Запуск анализа статистики канала")
-    analyze_subscribers_growth()
-    print("\n" + "="*50 + "\n")
-    analyze_channel_activity()
-    print("\n" + "="*50 + "\n")
-    analyze_discussions()
-    print("\n" + "="*50 + "\n")
-    analyze_top_users()
-    logger.info("Анализ статистики канала завершен") 
+    main() 

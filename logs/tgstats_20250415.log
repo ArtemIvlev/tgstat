@@ -1,0 +1,40 @@
+2025-04-15 14:50:50 - tgstats.run - INFO - Запуск сбора статистики канала
+2025-04-15 14:50:50 - tgstats.run - INFO - Инициализация клиента Telegram
+2025-04-15 14:50:50 - tgstats.run - INFO - Инициализация базы данных
+2025-04-15 14:50:50 - tgstats.run - INFO - Используется юзернейм канала: homoludens_asia_trip
+2025-04-15 14:50:50 - tgstats.run - INFO - Запуск коллектора: ChannelStatsCollector
+2025-04-15 14:50:50 - tgstats.collectors.channel_stats - INFO - Начало сбора статистики канала: homoludens_asia_trip
+2025-04-15 14:50:50 - tgstats.collectors.channel_stats - INFO - Получение информации о канале
+2025-04-15 14:50:50 - tgstats.collectors.channel_stats - INFO - Получена информация о канале: Моё большое путешествие (ID: 2074576664)
+2025-04-15 14:50:50 - tgstats.collectors.channel_stats - INFO - Получение полной информации о канале
+2025-04-15 14:50:51 - tgstats.collectors.channel_stats - INFO - Получена полная информация о канале. Подписчиков: 79
+2025-04-15 14:50:51 - tgstats.collectors.channel_stats - INFO - Преобразование данных для сохранения
+2025-04-15 14:50:51 - tgstats.collectors.channel_stats - INFO - Проверка существующих записей за 2025-04-15
+2025-04-15 14:50:51 - tgstats.collectors.channel_stats - INFO - Создание новой записи статистики
+2025-04-15 14:50:51 - tgstats.collectors.channel_stats - INFO - Сохранение изменений в базе данных
+2025-04-15 14:50:51 - tgstats.collectors.channel_stats - INFO - Статистика канала успешно сохранена
+2025-04-15 14:50:51 - tgstats.run - INFO - Коллектор ChannelStatsCollector успешно завершил работу
+2025-04-15 14:50:51 - tgstats.run - INFO - Запуск коллектора: ChannelPostsCollector
+2025-04-15 14:50:54 - tgstats.run - INFO - Коллектор ChannelPostsCollector успешно завершил работу
+2025-04-15 14:50:54 - tgstats.run - INFO - Запуск коллектора: ChannelParticipantsCollector
+2025-04-15 14:50:54 - tgstats.run - INFO - Коллектор ChannelParticipantsCollector успешно завершил работу
+2025-04-15 14:50:54 - tgstats.run - INFO - Запуск коллектора: ChannelActivityCollector
+2025-04-15 14:50:54 - tgstats.run - INFO - Коллектор ChannelActivityCollector успешно завершил работу
+2025-04-15 14:50:54 - tgstats.run - INFO - Запуск коллектора: DiscussionStatsCollector
+2025-04-15 14:50:54 - tgstats.run - INFO - Коллектор DiscussionStatsCollector успешно завершил работу
+2025-04-15 14:50:54 - tgstats.run - INFO - Отключение клиента Telegram
+2025-04-15 14:50:54 - tgstats.run - INFO - Сбор статистики завершен
+2025-04-15 14:51:00 - tgstats.analyze - INFO - Запуск анализа статистики канала
+2025-04-15 14:51:00 - tgstats.analyze - INFO - Анализ роста подписчиков за последние 30 дней
+2025-04-15 14:51:00 - tgstats.analyze - INFO - Запрос данных с 2025-03-16 11:51:00.690430 по 2025-04-15 11:51:00.690430
+2025-04-15 14:51:00 - tgstats.analyze - INFO - Найдено 2 записей о подписчиках
+2025-04-15 14:51:00 - tgstats.analyze - INFO - Анализ активности канала за последние 7 дней
+2025-04-15 14:51:00 - tgstats.analyze - INFO - Запрос данных с 2025-04-08 11:51:00.705690 по 2025-04-15 11:51:00.705690
+2025-04-15 14:51:00 - tgstats.analyze - INFO - Найдено 2 записей об активности
+2025-04-15 14:51:00 - tgstats.analyze - INFO - Анализ обсуждений канала за последние 7 дней
+2025-04-15 14:51:00 - tgstats.analyze - INFO - Запрос данных с 2025-04-08 11:51:00.710463 по 2025-04-15 11:51:00.710463
+2025-04-15 14:51:00 - tgstats.analyze - INFO - Найдено 2 записей об обсуждениях
+2025-04-15 14:51:00 - tgstats.analyze - INFO - Анализ наиболее активных пользователей канала
+2025-04-15 14:51:00 - tgstats.analyze - INFO - Запрос всех записей о комментариях
+2025-04-15 14:51:00 - tgstats.analyze - WARNING - Нет данных об активности пользователей
+2025-04-15 14:51:00 - tgstats.analyze - INFO - Анализ статистики канала завершен

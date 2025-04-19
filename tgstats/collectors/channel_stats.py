@@ -42,7 +42,7 @@ class ChannelStatsCollector(BaseCollector):
         logger.info(f"Проверка существующих записей за {today}")
         existing_stats = self.db.query(ChannelStats).filter(
             and_(
-                ChannelStats.channel_id == chat.id,
+                ChannelStats.channel_id == channel,
                 ChannelStats.date >= today
             )
         ).first()
@@ -58,7 +58,7 @@ class ChannelStatsCollector(BaseCollector):
             # Создаем новую запись статистики
             logger.info("Создание новой записи статистики")
             stats = ChannelStats(
-                channel_id=chat.id,
+                channel_id=channel,
                 title=CHANNEL_TITLE,
                 username=chat.username,
                 subscribers=full_chat.full_chat.participants_count,
