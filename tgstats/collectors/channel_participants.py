@@ -28,6 +28,7 @@ class ChannelParticipantsCollector(BaseCollector):
                             '_', '.', '-']
             
             all_participants = []
+            current_time = datetime.utcnow()
             
             # Поиск участников по каждой букве
             for letter in search_letters:
@@ -84,7 +85,10 @@ class ChannelParticipantsCollector(BaseCollector):
                         existing_participant.last_name = user.last_name
                         existing_participant.phone = user.phone if hasattr(user, 'phone') else None
                         existing_participant.raw = convert_to_json_serializable(user)
-                        existing_participant.updated_at = datetime.utcnow()
+                        existing_participant.updated_at = current_time
+                        # Если участник был помечен как вышедший, сбрасываем это
+                        if existing_participant.left_at:
+                            existing_participant.left_at = None
                     else:
                         # Добавляем нового участника
                         participant = ChannelParticipant(
@@ -106,6 +110,47 @@ class ChannelParticipantsCollector(BaseCollector):
                     self.db.session.rollback()
                     logger.error(f"Ошибка при обработке участника {user.id}: {str(e)}")
                     continue
+            
+            # Проверяем участников, которых нет в текущем списке
+            ten_minutes_ago = current_time - timedelta(minutes=10)
+            potentially_left_participants = self.db.query(ChannelParticipant).filter(
+                and_(
+                    ChannelParticipant.channel_id == channel,
+                    ChannelParticipant.updated_at < ten_minutes_ago,
+                    ChannelParticipant.left_at.is_(None)  # Проверяем только тех, кто еще не помечен как вышедший
+                )
+            ).all()
+            
+            if potentially_left_participants:
+                logger.info(f"Проверка {len(potentially_left_participants)} потенциально вышедших участников")
+                
+                # Получаем список ID всех текущих участников
+                current_participant_ids = {user.id for user in all_participants}
+                
+                # Проверяем каждого потенциально вышедшего участника
+                for participant in potentially_left_participants:
+                    if participant.user_id not in current_participant_ids:
+                        try:
+                            # Пробуем получить информацию о пользователе
+                            try:
+                                user = await self.client.get_entity(participant.user_id)
+                                # Если получилось получить информацию, проверяем его права в канале
+                                participant_info = await self.client.get_permissions(chat, user)
+                                if not participant_info.is_member:
+                                    # Если пользователь больше не участник, помечаем его как вышедшего
+                                    participant.left_at = current_time
+                                    self.db.session.commit()
+                                    logger.info(f"Участник {participant.user_id} помечен как вышедший")
+                            except Exception as e:
+                                # Если не удалось получить информацию о пользователе,
+                                # вероятно он действительно вышел из канала
+                                participant.left_at = current_time
+                                self.db.session.commit()
+                                logger.info(f"Участник {participant.user_id} помечен как вышедший (не удалось получить информацию)")
+                        except Exception as e:
+                            self.db.session.rollback()
+                            logger.error(f"Ошибка при проверке вышедшего участника {participant.user_id}: {str(e)}")
+                            continue
             
             logger.info(f"Участники канала сохранены")
             

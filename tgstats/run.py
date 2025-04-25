@@ -9,7 +9,8 @@ from tgstats.collectors import (
     ChannelPostsCollector,
     ChannelParticipantsCollector,
     ChannelActivityCollector,
-    DiscussionStatsCollector
+    DiscussionStatsCollector,
+    PostCommentsCollector
 )
 from tgstats.config.config import CHANNEL_IDS, CHANNEL_USERNAME
 from tgstats.logger import get_logger
@@ -38,7 +39,8 @@ async def collect_channel_stats(client, db, channel):
             ChannelPostsCollector(client, db),
             ChannelParticipantsCollector(client, db),
             ChannelActivityCollector(client, db),
-            DiscussionStatsCollector(client, db)
+            DiscussionStatsCollector(client, db),
+            PostCommentsCollector(client, db)
         ]
         
         # Запускаем все коллекторы

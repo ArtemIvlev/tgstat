@@ -2,7 +2,6 @@ from telethon.tl.functions.channels import GetFullChannelRequest
 from datetime import datetime
 from .base import BaseCollector
 from tgstats.database.models import ChannelStats
-from tgstats.config.config import CHANNEL_TITLE
 from sqlalchemy import and_
 from tgstats.logger import get_logger
 
@@ -50,7 +49,7 @@ class ChannelStatsCollector(BaseCollector):
         if existing_stats:
             # Обновляем существующую статистику за сегодня
             logger.info("Обновление существующей записи статистики")
-            existing_stats.title = CHANNEL_TITLE
+            existing_stats.title = chat.title
             existing_stats.username = chat.username
             existing_stats.subscribers = full_chat.full_chat.participants_count
             existing_stats.raw = raw_data
@@ -59,7 +58,7 @@ class ChannelStatsCollector(BaseCollector):
             logger.info("Создание новой записи статистики")
             stats = ChannelStats(
                 channel_id=channel,
-                title=CHANNEL_TITLE,
+                title=chat.title,
                 username=chat.username,
                 subscribers=full_chat.full_chat.participants_count,
                 raw=raw_data

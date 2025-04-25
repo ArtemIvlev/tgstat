@@ -14,11 +14,17 @@ logger = get_logger(__name__)
 def get_channel_title(channel_id):
     """Получает название канала из базы данных"""
     db = get_db()
+    # Пытаемся получить самую последнюю запись статистики для канала
     stats = db.query(ChannelStats).filter(
         ChannelStats.channel_id == channel_id
     ).order_by(desc(ChannelStats.date)).first()
     
-    return stats.title if stats else f"Канал {channel_id}"
+    # Если запись найдена и у нее есть название, возвращаем его
+    if stats and stats.title:
+        return stats.title
+    
+    # Если не нашли запись или название пустое, возвращаем ID канала
+    return f"Канал {channel_id}"
 
 def analyze_subscribers_growth(channel_id=None, days=30):
     """
@@ -346,18 +352,37 @@ def analyze_data(channel_ids=None):
     
     logger.info(f"Запуск анализа данных для каналов: {channel_ids}")
     
-    for channel_id in channel_ids:
-        channel_title = get_channel_title(channel_id)
-        logger.info(f"Анализ данных для канала {channel_id} ({channel_title})")
-        print(f"\n{'='*20} Канал {channel_title} {'='*20}")
+    if not channel_ids:
+        logger.warning("Список каналов для анализа пуст")
+        return
         
-        # Запускаем все виды анализа
-        analyze_subscribers_growth(channel_id)
-        analyze_channel_activity(channel_id)
-        analyze_discussions(channel_id)
-        analyze_top_users(channel_id)
-        analyze_hourly_activity(channel_id)
-        analyze_daily_trends(channel_id)
+    for channel_id in channel_ids:
+        try:
+            # Получаем название канала
+            channel_title = get_channel_title(channel_id)
+            logger.info(f"Анализ данных для канала {channel_id} (название: {channel_title})")
+            
+            # Проверяем наличие данных о канале
+            db = get_db()
+            stats = db.query(ChannelStats).filter(
+                ChannelStats.channel_id == channel_id
+            ).order_by(desc(ChannelStats.date)).first()
+            
+            if not stats:
+                logger.warning(f"Нет данных о канале {channel_id} в базе данных")
+                continue
+                
+            print(f"\n{'='*20} Канал {channel_title} {'='*20}")
+            
+            # Запускаем все виды анализа
+            analyze_subscribers_growth(channel_id)
+            analyze_channel_activity(channel_id)
+            analyze_discussions(channel_id)
+            analyze_top_users(channel_id)
+            analyze_hourly_activity(channel_id)
+            analyze_daily_trends(channel_id)
+        except Exception as e:
+            logger.error(f"Ошибка при анализе канала {channel_id}: {str(e)}", exc_info=True)
 
 def main():
     """Основная функция для запуска анализа"""

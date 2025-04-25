@@ -7,6 +7,7 @@ from datetime import datetime
 from tgstats.run import main as run_collector
 from tgstats.analyze import analyze_data
 from tgstats.run_gender import main as run_gender_analysis
+from tgstats.collect_comments import collect_comments
 from tgstats.logger import get_logger
 from tgstats.database.database import Database
 
@@ -45,6 +46,14 @@ async def run_gender_job():
     except Exception as e:
         logger.error(f"Ошибка при анализе гендеров: {str(e)}", exc_info=True)
 
+async def run_comments_collector_job():
+    """Запуск сбора комментариев"""
+    logger.info("Запуск сбора комментариев по расписанию")
+    try:
+        await collect_comments()
+    except Exception as e:
+        logger.error(f"Ошибка при сборе комментариев: {str(e)}", exc_info=True)
+
 def run_collector_wrapper():
     """Обертка для запуска асинхронного сбора данных"""
     try:
@@ -66,6 +75,13 @@ def run_gender_wrapper():
     except Exception as e:
         logger.error(f"Ошибка в обертке анализа гендеров: {str(e)}", exc_info=True)
 
+def run_comments_collector_wrapper():
+    """Обертка для запуска сбора комментариев"""
+    try:
+        asyncio.run(run_comments_collector_job())
+    except Exception as e:
+        logger.error(f"Ошибка в обертке сбора комментариев: {str(e)}", exc_info=True)
+
 def main():
     """Основная функция планировщика"""
     global is_running
@@ -79,8 +95,8 @@ def main():
     # Сбор данных каждый час
     schedule.every().hour.at(":00").do(run_collector_wrapper)
     
-    # Анализ данных каждый час после сбора
-    schedule.every().hour.at(":05").do(run_analyzer_wrapper)
+    # Сбор комментариев каждый час в 30 минут
+    schedule.every().hour.at(":30").do(run_comments_collector_wrapper)
     
     # Анализ гендеров каждый день в 03:00
     schedule.every().day.at("03:00").do(run_gender_wrapper)

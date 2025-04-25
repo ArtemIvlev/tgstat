@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, DateTime, JSON, ForeignKey, Text, Boolean, BigInteger, Index, Float, UniqueConstraint
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import relationship
+from sqlalchemy.orm import relationship, foreign
 from datetime import datetime
 
 Base = declarative_base()
@@ -32,6 +32,7 @@ class ChannelParticipant(Base):
     gender = Column(String)  # 'male', 'female', 'unknown'
     gender_confidence = Column(Float)
     updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    left_at = Column(DateTime, nullable=True)  # Дата когда участник покинул канал
 
     __table_args__ = (
         Index('idx_channel_participants_channel_id', 'channel_id'),
@@ -55,6 +56,7 @@ class ChannelPost(Base):
 
     # Связь с реакциями
     reactions = relationship("PostReaction", back_populates="post")
+    comments = relationship("PostComment", back_populates="post")
 
 class PostReaction(Base):
     __tablename__ = 'post_reactions'
@@ -114,4 +116,53 @@ class HourlyActivity(Base):
     # Индекс для быстрого поиска по дате и часу
     __table_args__ = (
         Index('idx_hourly_activity_date_hour', 'date', 'hour'),
+    )
+
+class PostComment(Base):
+    __tablename__ = 'post_comments'
+
+    id = Column(Integer, primary_key=True)
+    channel_id = Column(BigInteger, nullable=False)
+    post_id = Column(Integer, ForeignKey('channel_posts.id'), nullable=False)
+    message_id = Column(BigInteger, nullable=False)  # ID комментария в Telegram
+    user_id = Column(BigInteger, nullable=False)  # ID пользователя, оставившего комментарий
+    text = Column(Text, nullable=True)
+    date = Column(DateTime)
+    views = Column(Integer, default=0)
+    forwards = Column(Integer, default=0)
+    likes = Column(Integer, default=0)  # Количество лайков
+    raw = Column(JSON)  # Сырые данные комментария
+
+    # Связи
+    post = relationship("ChannelPost", back_populates="comments")
+    reactions = relationship("CommentReaction", 
+                           primaryjoin="foreign(PostComment.message_id)==CommentReaction.comment_id",
+                           back_populates="comment")
+
+    __table_args__ = (
+        Index('idx_post_comments_channel_id', 'channel_id'),
+        Index('idx_post_comments_post_id', 'post_id'),
+        Index('idx_post_comments_user_id', 'user_id'),
+        Index('idx_post_comments_date', 'date'),
+    )
+
+class CommentReaction(Base):
+    """Реакции на комментарии"""
+    __tablename__ = 'comment_reactions'
+
+    id = Column(Integer, primary_key=True)
+    comment_id = Column(BigInteger, nullable=False)
+    user_id = Column(BigInteger, nullable=False)
+    reaction = Column(String(32), nullable=False)  # Используем String для хранения эмодзи
+    count = Column(Integer, default=1)  # Добавляем атрибут count
+    date = Column(DateTime, nullable=False)
+
+    comment = relationship("PostComment",
+                         primaryjoin="foreign(PostComment.message_id)==CommentReaction.comment_id",
+                         back_populates="reactions")
+
+    __table_args__ = (
+        Index('ix_comment_reactions_comment_id', 'comment_id'),
+        Index('ix_comment_reactions_user_id', 'user_id'),
+        Index('ix_comment_reactions_date', 'date'),
     )
